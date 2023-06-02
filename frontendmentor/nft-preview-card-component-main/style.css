@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --dark-blue-main-BG: hsl(217, 54%, 11%);
+  --dark-blue-card-BG: hsl(216, 50%, 16%);
+  --dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: var(--dark-blue-main-BG);
+}
+
+.container {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--dark-blue-card-BG);
+  width: 350px;
+  height: 600px;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 50px -10px rgba(0, 0, 0, 0.7);
+  padding-bottom: 1rem;
+}
+
+.header__images_nft {
+  width: 300px;
+  height: 300px;
+  margin: 1.5rem auto;
+  border-radius: 0.5rem;
+}
+
+.header__images_nft:hover {
+  background-color: var(--cyan);
+  background-image: url('/images/icon-view.svg');background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.header__images_nft img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+.header__images_nft img:hover {
+  opacity: 50%;
+}
+
+.content {
+  width: 300px;
+  margin: 1.5rem auto;
+}
+
+.title__name {
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
+.title__name:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.detail {
+  margin-top: 1rem;
+  color: var(--soft-blue);
+}
+
+.bid {
+  width: 300px;
+  margin: 1.5rem auto;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--soft-blue);
+}
+
+.bid .price {
+  display: flex;
+  color: var(--cyan);
+}
+
+.bid .price p {
+  margin-left: 0.5rem;
+}
+
+.bid .time {
+  display: flex;
+  color: var(--soft-blue);
+}
+
+.bid .time p {
+  margin-left: 0.5rem;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+}
+
+.creator img {
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+}
+
+.creator p {
+  color: var(--soft-blue);
+  margin-left: 1rem;
+}
+
+.creator p span {
+  color: var(--white);
+}
+
+.creator p span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
