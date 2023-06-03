@@ -1,34 +1,3 @@
-// document.addEventListener("contextmenu", function(e){
-//   $('body').on('contextmenu', 'div.item', function() {
-
-//     console.log('trigger');
-//     document.getElementById("list").className = "show";
-//     document.getElementById("rmenu").style.top = mouseY(e) + 'px';
-//     document.getElementById("rmenu").style.left = mouseX(e) + 'px';
-
-//     window.event.returnValue = false;
-
-
-//   });
-// }, );
-
-// $(document).bind("click", function(event) {
-//   document.getElementById("list").className = "hide";
-// });
-
-////////////////////////////////////////////////////////
-
-// $(document).ready(function() {
-//   if ($("#item").addEventListener) {
-//     $("#item").addEventListener('contextmenu', function() {
-//       console.log('trigger');
-//     }, false);
-//   }
-// })
-
-
-///////////////////////////////////////////////
-
 $(document).ready(function() {
 
 
@@ -45,7 +14,9 @@ $(document).ready(function() {
 
 
       //alert("contextmenu"+event);
+      const getKey = event.currentTarget.attributes[1].nodeValue;
       document.getElementById("list").className = "show";
+      document.getElementById("list").setAttribute('accesskey', getKey);
       document.getElementById("list").style.top = mouseY(event) + 'px';
       document.getElementById("list").style.left = mouseX(event) + 'px';
 
@@ -60,6 +31,7 @@ $(document).ready(function() {
 // this is from another SO post...  
 $(document).bind("click", function(event) {
   document.getElementById("list").className = "hide";
+  document.getElementById("list").setAttribute('accesskey', '');
 });
 
 
@@ -87,4 +59,19 @@ function mouseY(evt) {
   } else {
     return null;
   }
+}
+
+function clickUse() {
+  const item = document.getElementById("list").accessKey;
+  console.log('Use : '+ item);
+}
+
+function clickGive() {
+  const item = document.getElementById("list").accessKey;
+  console.log('Give : '+ item);
+}
+
+function clickDrop() {
+  const item = document.getElementById("list").accessKey;
+  console.log('Drop : '+ item);
 }

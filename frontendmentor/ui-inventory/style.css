@@ -7,7 +7,8 @@
 }
 
 body{
-  background-color: blanchedalmond;
+  /* background-color: blanchedalmond; */
+  background-color: black;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -17,8 +18,10 @@ body{
 
 .container {
   background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: red; */
   width: 45%;
   height: 80%;
+  overflow: hidden;
 }
 
 .inv__header {
@@ -114,10 +117,12 @@ body{
 /* inv__items */
 .inv__items {
   display: grid;
-  column-gap: 2%;
-  row-gap: 2%;
+  column-gap: 1%;
+  row-gap: 1%;
   grid-template-columns: auto auto auto auto auto;
-  margin: 2% 2%;
+  margin: 1% 1%;
+  height: 400px;
+  overflow: auto;
 }
 
 .item {
@@ -153,25 +158,22 @@ body{
   position: absolute;
   list-style: none;
   background-color: #fff;
+  border-radius: 5px;
   width: 100px;
   padding: 0;
+  overflow: hidden;
 }
 
 #list li {
   padding: 10px;
   cursor: pointer;
-}
-
-#list li a{
-  padding: 0;
-  text-decoration: none;
   color: #333;
 }
 
-#list li a:hover, .list li:hover a{
+/* #list li{
+  padding: 0;
   text-decoration: none;
-  color: #fff;
-}
+} */
 
 #list li:hover {
   background-color: #333;
