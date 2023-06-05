@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --orange-dark : 255, 106, 0;
+  --orange : 255,127,0;
+  --blue-dark : 10,41,72;
+  --dark-grey : 32, 41, 41;
+}
+
+.navbar {
+  position: fixed;
+  top: 0%;
+  background-color: rgb(var(--dark-grey));
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.name__Brand {
+  color: rgb(var(--orange));
+  font-style: italic;
+  text-transform: uppercase;
+  margin-left: 100px;
+}
+
+.nav__List {
+  display: flex;
+  list-style: none;
+  margin-right: 100px;
+}
+
+.nav__Item {
+  margin-left: 20px;
+}
+
+.nav__Item a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav__Item a:hover {
+  color: rgb(var(--orange));
+}
+
+.description__Pizza {
+  margin-top: 60px;
+  position: relative;
+}
+
+.description__Pizza img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.description__Pizza .description {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  width: 30vw;
+  padding: 30px 20px;
+}
+
+.pizza__Tag {
+  color: rgba(var(--orange));
+  margin-bottom: 10px;
+}
+
+.region__Pizza {
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.detail__Pizza {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.order__Now {
+  background-color: rgb(var(--orange));
+  border: 0;
+  padding: 10px 10px;
+  border-radius: 2px;
+  color: white;
+  transition: 0.3s;
+}
+.order__Now:hover {
+  background-color: white;
+  color: rgb(var(--orange));
+}
+
+.view__Menu {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px 10px;
+  margin-left: 20px;
+  border-radius: 2px;
+  color: white;
+  transition: 0.3s;
+  border: 1px solid white;
+}
+.view__Menu:hover {
+  background-color: white;
+  color: rgb(var(--orange));
+}
+
+.menu__Pizza {
+  border: 1px solid red;
+  margin: 10px 10px;
+}
