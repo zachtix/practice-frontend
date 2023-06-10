@@ -278,6 +278,7 @@ body {
 
 .title__Services {
   padding-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .detail__Services {
@@ -307,6 +308,7 @@ body {
   font-weight: 400;
   color: rgb(var(--dark-grey));
   padding: 20px 0;
+  text-transform: uppercase;
 }
 
 .item__Service .detail__Service {
@@ -331,6 +333,7 @@ body {
 }
 
 .item_Footer h1 {
+  text-transform: uppercase;
   margin-bottom: 30px;
 }
 
@@ -365,4 +368,5 @@ body {
 .footer {
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
 }
