@@ -255,3 +255,114 @@ body {
   color: rgb(var(--orange));
   cursor: pointer;
 }
+
+.container__Services {
+  background-image: url('/images/bgServices.jpg');
+  background-repeat: no-repeat;
+  padding: 100px 100px;
+}
+
+.list_Services {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  margin: 0 100px;
+  height: 300px;
+}
+
+.title__Services, .detail__Services{
+  display: flex;
+  justify-content: center;
+  color: rgb(78, 54, 31);
+}
+
+.title__Services {
+  padding-bottom: 30px;
+}
+
+.detail__Services {
+  padding-bottom: 50px;
+}
+
+.item__Service {
+  width: 350px;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.item__Service .imageService {
+  border: 1px solid white;
+  padding: 20px 20px;
+  transition: 1s;
+  border-radius: 2px;
+}
+
+.item__Service .imageService:hover {
+  background-color: white;
+  transform: rotate(360deg);
+  border-radius: 30%;
+}
+
+.item__Service .title__Service {
+  font-weight: 400;
+  color: rgb(var(--dark-grey));
+  padding: 20px 0;
+}
+
+.item__Service .detail__Service {
+  font-weight: 400;
+  color: rgb(var(--dark-grey));
+}
+
+.container__Footer {
+  padding: 50px 30px;
+}
+
+.container__Footer .list_Footer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.item_Footer {
+  width: 350px;
+  margin-right: 100px;
+}
+
+.item_Footer h1 {
+  margin-bottom: 30px;
+}
+
+.item_Footer p {
+  margin-bottom: 24px;
+}
+
+.item__Questions {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.item__Questions img {
+  margin-right: 20px;
+  object-fit: cover;
+  width: auto;
+  height: 24px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.social img {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
