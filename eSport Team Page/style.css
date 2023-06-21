@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  background-image: url('/assets/Background.jpg');
+  margin: 0 auto;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li button {
+  text-transform: uppercase;
+}
