@@ -15,6 +15,8 @@ body {
   width: 1440px;
   background-image: url('/assets/Background.jpg');
   margin: 0 auto;
+  overflow-x: hidden;
+  border: 1px solid red;
 }
 
 header {
@@ -270,4 +272,193 @@ header nav ul li button:hover {
   color: #fff;
   font-size: 120px;
   margin: 0 auto;
+}
+
+.bestPlayer .top {
+  display: flex;
+}
+
+.bestPlayer .top .left {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.bestPlayer .top .left img {
+  position: absolute;
+  top: 50px;
+  left: -250px;
+}
+
+.bestPlayer .top .left button {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 800;
+  width: 280px;
+  height: 50px;
+  margin-left: 150px;
+}
+
+.bestPlayer .top .left .outline {
+  margin-top: 350px;
+  background-color: #ffffff00;
+  border: 5px solid #017ad4;
+  color: #017ad4;
+}
+
+.bestPlayer .top .left .fill {
+  margin-top: 30px;
+  border: 0;
+  background-color: #017ad4;
+  color: #fff;
+}
+
+.bestPlayer .top .right {
+  margin-top: 250px;
+  margin-left: 200px;
+  width: 550px;
+}
+
+.bestPlayer .top .right .title {
+  display: flex;
+}
+
+.bestPlayer .top .right .title .fill {
+  color: #017ad4;
+  text-transform: uppercase;
+  font-size: 100px;
+}
+
+.bestPlayer .top .right .title .outline {
+  -webkit-text-fill-color: #ffffff00;
+  -webkit-text-stroke: 3px #017ad4;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.bestPlayer .bottom {
+  margin-top: 150px;
+}
+
+.bestPlayer .bottom img {
+  width: 1440px;
+}
+
+.bestPlayer {
+  height: 955px;
+}
+
+.teams {
+  position: relative;
+}
+
+.teams .teamList .top {
+  position: absolute;
+  top: 50px;
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+}
+
+.teams .teamList .top div {
+  width: 300px;
+  height: 300px;
+  margin-right: 80px;
+}
+
+.teams .teamList .top div h1 {
+  -webkit-text-fill-color: #ffffff00;
+  -webkit-text-stroke: 3px #fff;
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.teams .teamList .top div button {
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #017ad4;
+  font-size: 24px;
+  font-weight: 800;
+  border: 0;
+  width: 300px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.teams .teamList .bottom {
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+}
+
+.teams .teamList .bottom div {
+  width: 300px;
+  height: 300px;
+  margin-right: 80px;
+}
+
+.teams .teamList .bottom div h1 {
+  -webkit-text-fill-color: #ffffff00;
+  -webkit-text-stroke: 3px #017ad4;
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.teams .teamList .bottom div button {
+  background-color: #017ad4;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  border: 0;
+  width: 300px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.legendaryMatch {
+  margin-top: 100px;
+  display: flex;
+}
+
+.legendaryMatch .right {
+  position: relative;
+  width: 500px;
+  margin-top: 250px;
+  margin-left: -100px;
+}
+
+.legendaryMatch .right img {
+  position: absolute;
+  right: -900px;
+  bottom: -100px;
+}
+
+.legendaryMatch .right .title h1 {
+  text-transform: uppercase;
+  font-size: 100px;
+}
+
+.legendaryMatch .right .title .fill {
+  color: #017ad4;
+}
+
+.legendaryMatch .right .title .outline {
+  margin-top: -50px;
+  -webkit-text-fill-color: #ffffff00;
+  -webkit-text-stroke: 3px #017ad4;
+}
+
+.legendaryMatch .right button {
+  margin-top: 30px;
+  border: 0;
+  background-color: #017ad4;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  width: 300px;
+  height: 60px;
 }
