@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+  font-family: 'Overpass', sans-serif;
+  /* font-family: 'Ubuntu', sans-serif; */
+}
+
+body {
+  background-color: yellowgreen;
+  margin-top: 5rem;
+}
+
+/* header {
+  background-color: aqua;
+} */
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+  /* border: 1px solid red; */
+}
+
+.navbar {
+  display: flex;
+  /* border: 1px solid red;  */
+}
+
+.nav__menu {
+  position: relative;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  margin-left: 2rem;
+}
+
+.title__nav {
+  color: white;
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  /* border: 1px solid gray; */
+  background-color: white;
+  width: 8rem;
+  border-radius: 3px;
+  margin-top: 1rem;
+  padding: 1rem 0.5rem;
+}
+
+.dropdown__content p {
+  height: 2rem;
+  padding: 0 0.5rem;
+}
+
+.nav__menu:hover .dropdown__content {
+  display: block;
+}
+
+.nav__menu:hover .title__nav {
+  text-decoration: underline;
+}
+
+.nav__menu:hover .title__nav img {
+  transform: rotate(box-sizing);
+}
