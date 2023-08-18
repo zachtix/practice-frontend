@@ -1,0 +1,23 @@
+{
+  "name": "practice-frontend",
+  "version": "1.0.0",
+  "description": "![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachtix/practice-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zachtix/practice-frontend/issues"
+  },
+  "homepage": "https://github.com/zachtix/practice-frontend#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
