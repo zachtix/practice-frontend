@@ -6,21 +6,27 @@
   box-sizing: border-box;
   transition: 0.3s;
   font-family: 'Overpass', sans-serif;
+} 
+body {
+  width: 100%;
+  // height: auto;
+  // border: 1px solid red;
+  overflow-x: hidden;
+  // overflow-y: hidden;
 }
 
 header {
+  border-radius: 0 0 5rem 5rem;
+  // overflow: hidden;
+  background-image: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 80%);
+  background-position: left 28% bottom 47%, center;
   .container {
-    position: relative;
-    border-radius: 0 0 5rem 5rem;
-    overflow: hidden;
-    background-image: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 80%);
-    background-position: left 28% bottom 47%, center;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
     .top__nav {
       display: flex;
       justify-content: space-between;
-      width: 100%;
-      max-width: 1440px;
-      margin: auto;
       padding: 2rem 5rem;
       .navbar {
         display: flex;
@@ -99,10 +105,8 @@ header {
       }
     }
     .show {
-      width: 100%;
       height: 25rem;
-      max-width: 1440px;
-      margin: auto;
+      // border: 1px solid red;
     
       color: white;
       text-align: center;
@@ -144,6 +148,224 @@ header {
           color: hsl(353, 100%, 62%);
           background-color: white;
         }
+      }
+    }
+  }
+}
+
+main {
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    // overflow: hidden;
+    // border: 1px solid red;
+    .first__content {
+      position: relative;
+      h1 {
+        color: hsl(208, 49%, 24%);
+        text-align: center;
+        margin: 10rem;
+      }
+      img {
+        position: absolute;
+        top: -5rem;
+        right: -17rem;
+      }
+      .content {
+        width: 600px;
+        margin-left: 5rem;
+        // border: 1px solid blue;
+          h2 {
+            color: hsl(208, 49%, 24%);
+          }
+          p {
+            margin-top: 1.5rem;
+          }
+        .second {
+          margin-top: 4rem;
+        }
+      }
+    }
+    .second__content {
+      position: relative;
+      background-image: url("../images/bg-pattern-circles.svg"), linear-gradient(90deg, hsl(237, 17%, 21%) 0%, hsl(237, 23%, 32%) 80%);
+      background-repeat: no-repeat;
+      border-radius: 0 5rem 0 5rem;
+      margin-top: 20rem;
+      background-position: left -50% bottom 20%, center;
+      img {
+        position: absolute;
+        top: -6rem;
+        left: 5rem;
+      }
+      .content {
+        width: 500px;
+        color: white;
+        padding: 7rem 0;
+        margin-left: 47rem;
+        // border: 1px solid red;
+        p {
+          margin-top: 1.5rem;
+        }
+      }
+    }
+    .third__content {
+      position: relative;
+      img {
+        position: absolute;
+        left: -18rem;
+        top: -15rem;
+      }
+      .content {
+        width: 500px;
+        margin-top: 20rem;
+        margin-left: 47rem;
+        h2 {
+          color: hsl(208, 49%, 24%);
+        }
+        p {
+          margin-top: 1.5rem;
+        }
+        .second {
+          margin-top: 4rem;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: hsl(240, 10%, 16%);
+  border-radius: 0 5rem 0 0;
+  margin-top: 20rem;
+  .container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 0;
+    color: hsl(240, 2%, 79%);
+    img {
+      object-fit: cover;
+      width: 10rem;
+    }
+    h3 {
+      margin-bottom: 2rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+  .attribution {
+    font-size: 11px; text-align: center;
+    color: hsl(240, 2%, 79%);
+  }
+  .attribution a {
+    color: hsl(240, 2%, 79%);
+  }
+}
+
+@media (max-width: 480px) {
+  // img {
+  //   display: none;
+  // }
+  header {
+    background-image: url("../images/bg-pattern-intro-mobile.svg"), linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 80%);
+    background-position: left 35% bottom 60%, center;
+    .container {
+      .top__nav {
+        .navbar {
+          .nav__menu {
+            display: none;
+          }
+        }
+        .user__panel {
+          display: none;
+        }
+      }
+      .show {
+        padding: 0 2.5rem;
+        h1 {
+          font-size: 2.2rem;
+        }
+        .btn__show {
+          button {
+            width: 9rem;
+            font-size: 1.3rem;
+          }
+          // .start {
+          //   margin-right: 0.5rem;
+          // }
+        }
+      }
+    }
+  }
+  main {
+    .container {
+      margin-top: 5rem;
+      .first__content {
+        h1 {
+          margin: 0;
+          font-size: 2rem;
+        }
+        img {
+          content: url("/images/illustration-editor-mobile.svg");
+          position: relative;
+          top: 0;
+          right: 0;
+          margin-top: 2rem;
+          width: 100%;
+        }
+        .content {
+          width: auto;
+          text-align: center;
+          margin-left: 0;
+          padding: 0 2rem;
+        }
+      }
+      .second__content {
+        background-position: left 50% bottom -200%, center;
+        background-size: 150%;
+        .img__phone {
+          width: 100%;
+          top: -15rem;
+          left: 0;
+        }
+        .content {
+          width: 100%;
+          margin-left: 0;
+          text-align: center;
+          padding: 0 5rem;
+          padding-top: 15rem;
+          padding-bottom: 10rem;
+        }
+      }
+      .third__content {
+        margin-top: 3rem;
+        img {
+          position: relative;
+          top: 0;
+          left: 0;
+          content: url("../images/illustration-laptop-mobile.svg");
+        }
+        .content {
+          width: 100%;
+          margin: 2rem 0;
+          text-align: center;
+          padding: 0 5rem;
+        }
+      }
+    }
+  }
+  footer {
+    margin-top: 5rem;
+    padding-bottom: 1rem;
+    .container {
+      display: grid;
+      text-align: center;
+      .list {
+        margin-top: 5rem;
       }
     }
   }
