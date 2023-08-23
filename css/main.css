@@ -27,7 +27,7 @@ header {
         align-items: end; }
         header .container .top__nav .navbar .logo__blogr {
           margin-right: 2rem; }
-        header .container .top__nav .navbar .toggle__hamburger {
+        header .container .top__nav .navbar .toggle__hamburger, header .container .top__nav .navbar .hamburger__nav {
           display: none; }
         header .container .top__nav .navbar .nav__menu {
           position: relative;
@@ -205,51 +205,85 @@ footer {
   header {
     background-image: url("../images/bg-pattern-intro-mobile.svg"), linear-gradient(90deg, #ff8f70 0%, #ff3d54 80%);
     background-position: left 35% bottom 60%, center; }
-    header .container .top__nav .navbar {
-      position: relative; }
-      header .container .top__nav .navbar .nav__menu {
-        display: none; }
-      header .container .top__nav .navbar input + label {
-        content: url("/images/icon-hamburger.svg");
-        height: 100%;
-        width: 100%; }
-      header .container .top__nav .navbar input:checked + label {
-        content: url("/images/icon-close.svg"); }
-      header .container .top__nav .navbar input:checked + label ~ .hamburger__nav {
-        display: grid; }
-      header .container .top__nav .navbar .hamburger__nav {
-        display: none;
-        position: absolute;
-        top: 2rem;
-        padding: 2rem 0;
-        margin: 0 2rem;
-        width: 100%;
-        background-color: white; }
-        header .container .top__nav .navbar .hamburger__nav .ham__menu {
-          text-align: center; }
-          header .container .top__nav .navbar .hamburger__nav .ham__menu .dropdown__ham {
-            display: none; }
-            header .container .top__nav .navbar .hamburger__nav .ham__menu .dropdown__ham ul {
-              background-color: #e6e6e6;
+    header .container .top__nav {
+      display: flex;
+      justify-content: space-between; }
+      header .container .top__nav .navbar {
+        position: relative; }
+        header .container .top__nav .navbar .nav__menu {
+          display: none; }
+        header .container .top__nav .navbar input + label {
+          content: url("/images/icon-hamburger.svg");
+          height: 100%;
+          width: 100%; }
+        header .container .top__nav .navbar input:checked + label {
+          content: url("/images/icon-close.svg"); }
+        header .container .top__nav .navbar input:checked + label ~ .hamburger__nav {
+          display: grid; }
+        header .container .top__nav .navbar .hamburger__nav {
+          display: none;
+          position: absolute;
+          top: 3rem;
+          left: -4rem;
+          padding: 2rem 0;
+          margin: 1rem 0;
+          width: 90vw;
+          border-radius: 0.3rem;
+          background-color: white;
+          font-weight: 700;
+          box-shadow: 0 5px 18px rgba(0, 0, 0, 0.5); }
+          header .container .top__nav .navbar .hamburger__nav .ham__menu {
+            text-align: center;
+            margin: 0 1.5rem; }
+            header .container .top__nav .navbar .hamburger__nav .ham__menu .dropdown__ham {
+              display: none; }
+              header .container .top__nav .navbar .hamburger__nav .ham__menu .dropdown__ham ul {
+                background-color: #e6e6e6;
+                padding: 1rem;
+                border-radius: 0.3rem; }
+                header .container .top__nav .navbar .hamburger__nav .ham__menu .dropdown__ham ul li {
+                  list-style: none; }
+                  header .container .top__nav .navbar .hamburger__nav .ham__menu .dropdown__ham ul li a {
+                    text-decoration: none;
+                    color: gray; }
+                  header .container .top__nav .navbar .hamburger__nav .ham__menu .dropdown__ham ul li:nth-child(n + 2) {
+                    margin-top: 0.5rem; }
+            header .container .top__nav .navbar .hamburger__nav .ham__menu .title__ham {
+              display: none; }
+              header .container .top__nav .navbar .hamburger__nav .ham__menu .title__ham:checked + label img {
+                transform: rotate(-180deg); }
+              header .container .top__nav .navbar .hamburger__nav .ham__menu .title__ham:checked + label ~ .dropdown__ham {
+                display: block; }
+              header .container .top__nav .navbar .hamburger__nav .ham__menu .title__ham:checked + label {
+                color: gray; }
+            header .container .top__nav .navbar .hamburger__nav .ham__menu label {
+              content: ""; }
+              header .container .top__nav .navbar .hamburger__nav .ham__menu label img {
+                margin-left: 0.5rem; }
+            header .container .top__nav .navbar .hamburger__nav .ham__menu:nth-child(n + 2) {
+              margin-top: 1rem; }
+          header .container .top__nav .navbar .hamburger__nav .ham__user__panel {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(128, 128, 128, 0.3);
+            display: grid; }
+            header .container .top__nav .navbar .hamburger__nav .ham__user__panel button {
+              margin: auto;
+              border-radius: 2rem;
               padding: 1rem;
-              border-radius: 0.5rem; }
-              header .container .top__nav .navbar .hamburger__nav .ham__menu .dropdown__ham ul li {
-                list-style: none; }
-                header .container .top__nav .navbar .hamburger__nav .ham__menu .dropdown__ham ul li a {
-                  text-decoration: none;
-                  color: gray; }
-          header .container .top__nav .navbar .hamburger__nav .ham__menu input {
-            display: none; }
-            header .container .top__nav .navbar .hamburger__nav .ham__menu input:checked + label img {
-              transform: rotate(-180deg); }
-            header .container .top__nav .navbar .hamburger__nav .ham__menu input:checked + label ~ .dropdown__ham {
-              display: block; }
-          header .container .top__nav .navbar .hamburger__nav .ham__menu label {
-            content: ""; }
-            header .container .top__nav .navbar .hamburger__nav .ham__menu label img {
-              margin-left: 0.5rem; }
-    header .container .top__nav .user__panel {
-      display: none; }
+              width: 30vw;
+              font-weight: 700;
+              font-size: 1rem; }
+              header .container .top__nav .navbar .hamburger__nav .ham__user__panel button:first-child {
+                margin-bottom: 0.5rem;
+                border: 0;
+                background-color: #ffffff00; }
+              header .container .top__nav .navbar .hamburger__nav .ham__user__panel button:last-child {
+                color: white;
+                border: 0;
+                background: linear-gradient(90deg, #ff8f70 0%, #ff3d54 80%); }
+      header .container .top__nav .user__panel {
+        display: none; }
     header .container .show {
       padding: 0 2.5rem; }
       header .container .show h1 {

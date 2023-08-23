@@ -34,7 +34,7 @@ header {
         .logo__blogr {
           margin-right: 2rem;
         }
-        .toggle__hamburger {
+        .toggle__hamburger, .hamburger__nav {
           display: none;
         }
         .nav__menu {
@@ -278,7 +278,8 @@ footer {
     background-position: left 35% bottom 60%, center;
     .container {
       .top__nav {
-        // display: flex;
+        display: flex;
+        justify-content: space-between;
         .navbar {
           position: relative;
           .nav__menu {
@@ -303,29 +304,38 @@ footer {
           .hamburger__nav {
             display: none;
             position: absolute;
-            top: 2rem;
+            top: 3rem;
+            left: -4rem;
             padding: 2rem 0;
-            margin: 0 2rem;
-            width: 100%;
+            margin: 1rem 0;
+            width: 90vw;
+            border-radius: 0.3rem;
             background-color: white;
+            font-weight: 700;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.5);
             .ham__menu {
               text-align: center;
+              margin: 0 1.5rem;
               .dropdown__ham {
+                // margin: 0 1.5rem;
                 display: none;
                 ul {
                   background-color: hsl(0, 0%, 90%);
                   padding: 1rem;
-                  border-radius: 0.5rem;
+                  border-radius: 0.3rem;
                   li {
                     list-style: none;
                     a {
                       text-decoration: none;
                       color: hsl(0, 0%, 50%);
                     }
+                    &:nth-child(n + 2) {
+                      margin-top: 0.5rem;
+                    }
                   }
                 }
               }
-              input {
+              .title__ham {
                 display: none;
                 &:checked  + label img {
                   transform: rotate(-180deg);
@@ -333,11 +343,41 @@ footer {
                 &:checked  + label ~ .dropdown__ham {
                   display: block;
                 }
+                &:checked  + label {
+                  color: hsl(0, 0%, 50%);
+                }
               }
               label {
                 content: "";
                 img {
                   margin-left: 0.5rem;
+                }
+              }
+              &:nth-child(n + 2) {
+                margin-top: 1rem;
+              }
+            }
+            .ham__user__panel {
+              margin-top: 1.5rem;
+              padding-top: 1rem;
+              border-top: 1px solid hsla(0, 0%, 50%, 0.3);
+              display: grid;
+              button {
+                margin: auto;
+                border-radius: 2rem;
+                padding: 1rem;
+                width: 30vw;
+                font-weight: 700;
+                font-size: 1rem;
+                &:first-child {
+                  margin-bottom: 0.5rem;
+                  border: 0;
+                  background-color: #ffffff00;
+                }
+                &:last-child {
+                  color: white;
+                  border: 0;
+                  background: linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 80%);
                 }
               }
             }
