@@ -205,16 +205,49 @@ footer {
   header {
     background-image: url("../images/bg-pattern-intro-mobile.svg"), linear-gradient(90deg, #ff8f70 0%, #ff3d54 80%);
     background-position: left 35% bottom 60%, center; }
-    header .container .top__nav .navbar .nav__menu {
-      display: none; }
-    header .container .top__nav .navbar input + label {
-      content: url("/images/icon-hamburger.svg");
-      height: 100%;
-      width: 100%; }
-    header .container .top__nav .navbar input:checked + label {
-      content: url("/images/icon-close.svg"); }
-    header .container .top__nav .navbar input:checked + label ~ .nav__menu {
-      display: flex; }
+    header .container .top__nav .navbar {
+      position: relative; }
+      header .container .top__nav .navbar .nav__menu {
+        display: none; }
+      header .container .top__nav .navbar input + label {
+        content: url("/images/icon-hamburger.svg");
+        height: 100%;
+        width: 100%; }
+      header .container .top__nav .navbar input:checked + label {
+        content: url("/images/icon-close.svg"); }
+      header .container .top__nav .navbar input:checked + label ~ .hamburger__nav {
+        display: grid; }
+      header .container .top__nav .navbar .hamburger__nav {
+        display: none;
+        position: absolute;
+        top: 2rem;
+        padding: 2rem 0;
+        margin: 0 2rem;
+        width: 100%;
+        background-color: white; }
+        header .container .top__nav .navbar .hamburger__nav .ham__menu {
+          text-align: center; }
+          header .container .top__nav .navbar .hamburger__nav .ham__menu .dropdown__ham {
+            display: none; }
+            header .container .top__nav .navbar .hamburger__nav .ham__menu .dropdown__ham ul {
+              background-color: #e6e6e6;
+              padding: 1rem;
+              border-radius: 0.5rem; }
+              header .container .top__nav .navbar .hamburger__nav .ham__menu .dropdown__ham ul li {
+                list-style: none; }
+                header .container .top__nav .navbar .hamburger__nav .ham__menu .dropdown__ham ul li a {
+                  text-decoration: none;
+                  color: gray; }
+          header .container .top__nav .navbar .hamburger__nav .ham__menu input {
+            display: none; }
+            header .container .top__nav .navbar .hamburger__nav .ham__menu input:checked + label img {
+              transform: rotate(-180deg); }
+            header .container .top__nav .navbar .hamburger__nav .ham__menu input:checked + label ~ .dropdown__ham {
+              display: block; }
+          header .container .top__nav .navbar .hamburger__nav .ham__menu label {
+            content: ""; }
+            header .container .top__nav .navbar .hamburger__nav .ham__menu label img {
+              margin-left: 0.5rem; }
     header .container .top__nav .user__panel {
       display: none; }
     header .container .show {

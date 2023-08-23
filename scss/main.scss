@@ -280,6 +280,7 @@ footer {
       .top__nav {
         // display: flex;
         .navbar {
+          position: relative;
           .nav__menu {
             display: none;
           }
@@ -287,7 +288,6 @@ footer {
           //   display: block;
           // }
           input {
-            // display: block;
             + label {
               content: url("/images/icon-hamburger.svg"); 
               height: 100%;
@@ -296,8 +296,50 @@ footer {
             &:checked + label {
               content: url("/images/icon-close.svg");
             }
-            &:checked + label ~ .nav__menu {
-              display: flex;
+            &:checked + label ~ .hamburger__nav {
+              display: grid;
+            }
+          }
+          .hamburger__nav {
+            display: none;
+            position: absolute;
+            top: 2rem;
+            padding: 2rem 0;
+            margin: 0 2rem;
+            width: 100%;
+            background-color: white;
+            .ham__menu {
+              text-align: center;
+              .dropdown__ham {
+                display: none;
+                ul {
+                  background-color: hsl(0, 0%, 90%);
+                  padding: 1rem;
+                  border-radius: 0.5rem;
+                  li {
+                    list-style: none;
+                    a {
+                      text-decoration: none;
+                      color: hsl(0, 0%, 50%);
+                    }
+                  }
+                }
+              }
+              input {
+                display: none;
+                &:checked  + label img {
+                  transform: rotate(-180deg);
+                }
+                &:checked  + label ~ .dropdown__ham {
+                  display: block;
+                }
+              }
+              label {
+                content: "";
+                img {
+                  margin-left: 0.5rem;
+                }
+              }
             }
           }
         }
