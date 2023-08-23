@@ -390,12 +390,18 @@ footer {
       .show {
         padding: 0 2.5rem;
         h1 {
-          font-size: 2.2rem;
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1rem;
         }
         .btn__show {
           button {
-            width: 9rem;
-            font-size: 1.3rem;
+            width: 8rem;
+            height: 3rem;
+            padding: 1rem 0.5rem;
+            font-size: 1rem;
+            font-weight: 700;
           }
           // .start {
           //   margin-right: 0.5rem;
@@ -450,6 +456,7 @@ footer {
           position: relative;
           top: 0;
           left: 0;
+          width: 100%;
           content: url("../images/illustration-laptop-mobile.svg");
         }
         .content {
