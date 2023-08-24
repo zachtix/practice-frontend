@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: aqua;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 920px;
+  height: 500px;
+}
+
+.left {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.center {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.right {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.item {
+  padding: 50px 50px;
+  position:relative;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  margin: 30px 0;
+  color: white;
+  text-transform: uppercase;
+}
+
+p, a {
+  font-family: 'Lexend Deca', sans-serif;
+  color: white;
+}
+
+button {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  width: 145px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: rgba(0,0,0,0);
+  color: white;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.left button:hover {
+  color: hsl(31, 77%, 52%);
+}
+
+.center button:hover {
+  color: hsl(184, 100%, 22%);
+}
+
+.right button:hover {
+  color: hsl(179, 100%, 13%);
+}
+
+/* footer */
+.attribution {
+  margin-top: 50px;
+}
+
+.attribution a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
