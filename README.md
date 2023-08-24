@@ -27,4 +27,4 @@ Original Design
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/blogr-landing-page-LgfhqBn46B)
-- Live Site URL: [Live Site](https://prismatic-nougat-23b739.netlify.app/)
+- Live Site URL: [Live Site](https://zachtix-fem-blogr.netlify.app/)
