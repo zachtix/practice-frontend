@@ -1,0 +1,226 @@
+header {
+  & section {
+    position: relative;
+    .bg-banner {
+      width: 100%;
+      height: 356px;
+      background-color: var(--primary-3);
+      overflow: hidden;
+      position: relative;
+      & img {
+        width: 100%;
+        position: absolute;
+        top: -180px;
+      }
+    }
+    .content {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #FFF;
+      border-radius: 37px 37px 0 0;
+      padding: 41px 152px;
+      text-align: center;
+    }
+  }
+}
+
+main {
+  .about-us {
+    margin-top: 200px;
+    position: relative;
+    .content {
+      width: 751px;
+      margin: 0 auto;
+      text-align: center;
+      & h1 {
+        font-size: 85px;
+        line-height: 125%;
+      }
+      & h2 {
+        font-style: italic;
+        letter-spacing: 0.7px;
+        line-height: 125%;
+      }
+      & h3 {
+        margin-top: 34px;
+        font-family: var(--fn-jo);
+      }
+    }
+    .pattern {
+      width: 875.5px;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .what-we-do, .result {
+    margin-top: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .content {
+      width: 500px;
+      & p {
+        margin-top: 23px;
+        color: #4D5053;
+        font-family: var(--fn-jo);
+        line-height: 150%;
+        letter-spacing: 0.22px;
+      }
+      & button {
+        margin-top: 41px;
+      }
+    }
+    .imageBox {
+      width: 659px;
+      height: 377px;
+      background-color: #C4C4C4;
+      border-radius: 70px;
+      overflow: hidden;
+      position: relative;
+      & img {
+        width: 100%;
+        position: absolute;
+        top: -50px;
+      }
+    }
+  }
+  .result {
+    margin-top: 150px;
+  }
+  .team {
+    margin-top: 200px;
+    width: 100%;
+    height: 968px;
+    background-color: var(--primary-3);
+    padding-top: 185px;
+    .headerTeam {
+      margin: 0 auto;
+      width: 547px;
+      text-align: center;
+    }
+    .aboutTeam {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      .card {
+        width: 283.548px;
+        height: 433px;
+        background-color: #FFF;
+        border-radius: 30px;
+        overflow: hidden;
+        position: relative;
+        & img {
+          position: absolute;
+        }
+        .imagePerson01 {
+          height: 110%;
+          left: -200px;
+        }
+        .imagePerson02 {
+          height: 125%;
+          left: -480px;
+          top: -20px;
+        }
+        .imagePerson04 {
+          height: 200%;
+          left: -210px;
+          top: -100px;
+        }
+        .details {
+          margin: 0 auto;
+          margin-top: 70px;
+          width: 227.248px;
+          height: 292.474px;
+          text-align: center;
+          .name {
+            line-height: 150%;
+            letter-spacing: 0.25px;
+            & span {
+              color: #4D5053;
+              font-family: var(--fn-jo);
+              font-size: 18px;
+              line-height: 150%;
+              letter-spacing: 0.18px;
+            }
+          }
+          .social {
+            width: 147px;
+            margin: 0 auto;
+            margin-top: 65.53px;
+            display: flex;
+            justify-content: space-between;
+            & svg {
+              fill: #292F36;
+            }
+          }
+          .contact {
+            margin-top: 66.95px;
+            & p {
+              color: #4D5053;
+              font-family: var(--fn-jo);
+              font-size: 18px;
+              line-height: 150%;
+              letter-spacing: 0.18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .mailBox {
+    .headerMail {
+      margin: 0 auto;
+      width: 634px;
+      text-align: center;
+    }
+    .form {
+      width: 796px;
+      margin: 0 auto;
+      margin-top: 77px;
+      font-family: var(--fn-jo);
+      .formBox {
+        display: flex;
+        flex-direction: column;
+        & label {
+          color: #4D5053;
+          font-size: 22px;
+          line-height: 150%;
+          letter-spacing: 0.22px;
+        }
+        & input {
+          margin-top: 10px;
+          width: 378px;
+          border-bottom: 1px solid #000;
+          border-top: 0;
+          border-left: 0;
+          border-right: 0;
+          font-family: var(--fn-jo);
+          color: #4D5053;
+          font-size: 22px;
+          line-height: 150%;
+          letter-spacing: 0.22px;
+        }
+        .bigInput {
+          width: 100%;
+          height: 130px;
+        }
+      }
+      .topForm {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+      }
+    }
+    & button {
+      margin: 0 auto;
+      margin-top: 77px;
+      margin-bottom: 135px;
+    }
+  }
+}
