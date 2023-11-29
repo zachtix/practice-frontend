@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --primary-1 : #CDA274;
+  --primary-2 : #292F36;
+  --primary-3 : #F4F0EC;
+  --fn-dm : 'DM Serif Display';
+  --fn-jo : 'Jost';
+}
+
+h1 {
+  color: #292F36;
+  font-family: var(--fn-dm);
+  font-weight: 400;
+  font-size: 50px;
+}
+h2 {
+  color: #292F36;
+  font-family: var(--fn-dm);
+  font-weight: 400;
+  font-size: 35px;
+}
+h3 {
+  color: #292F36;
+  font-family: var(--fn-dm);
+  font-weight: 400;
+  font-size: 25px;
+}
+h4 {
+  color: #292F36;
+  font-family: var(--fn-dm);
+  font-weight: 400;
+  font-size: 22px;
+}
+h5 {
+  color: #292F36;
+  font-family: var(--fn-dm);
+  font-weight: 400;
+  font-size: 20px;
+}
+h6 {
+  color: #292F36;
+  font-family: var(--fn-dm);
+  font-weight: 400;
+  font-size: 18px;
+}
+.btn {
+  padding: 26px 54px;
+  display: flex;
+  align-items: center;
+  border: 0;
+  border-radius: 18px;
+  color: #FFF;
+  font-family: var(--fn-jo);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.36px;
+  & svg {
+    margin-left: 10px;
+  }
+}
+.btn-default {
+  background-color: var(--primary-2);
+  & svg {
+    stroke: var(--primary-1);
+  }
+}
+.btn-primary {
+  background-color: var(--primary-1);
+  & svg {
+    stroke: var(--primary-2);
+  }
+}
