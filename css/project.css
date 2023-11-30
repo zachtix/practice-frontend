@@ -45,15 +45,13 @@ main {
       }
     }
     .project {
-      /* border: 1px solid red; */
       margin-top: 61px;
-      display: grid;
-      grid-template-columns: 50% 50%;
-      gap: 14px;
       .card {
-        width: 585px;
+        /* border: 1px solid red; */
+        width: 586px;
+        padding: 10px 10px;
         .content {
-          margin-top: 24px;
+          margin: 24px 0;
           display: flex;
           justify-content: space-between;
           & h3 {
