@@ -62,22 +62,6 @@ header {
         font-family: 'Jost';
         font-weight: 400;
       }
-      & button {
-        margin-top: 21px;
-        background-color: var(--primary-2);
-        border: 0;
-        border-radius: 18px;
-        padding: 26px 49px;
-        color: #FFF;
-        font-family: 'Jost';
-        font-size: 18px;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        & svg {
-          margin-left: 18px;
-        }
-      }
     }
   }
 }
@@ -101,16 +85,10 @@ main {
         color: #4D5053;
       }
       & button {
-        margin-top: 52px;
-        border: 0;
-        background-color: transparent;
-        font-family: var(--fn-jo);
-        font-weight: 600;
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-        & svg {
-          margin-left: 12px;
+        background-color: #fff;
+        color: #4D5053;
+        &:hover {
+          color: #84888b;
         }
       } 
     }
@@ -221,6 +199,7 @@ main {
           .person {
             width: 257px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
             .personImage {
               margin-right: 23px;

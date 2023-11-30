@@ -1,0 +1,112 @@
+header {
+  & section {
+    position: relative;
+    .bg-banner {
+      width: 100%;
+      height: 356px;
+      background-color: var(--primary-3);
+      overflow: hidden;
+      position: relative;
+      & img {
+        width: 100%;
+        position: absolute;
+        top: -180px;
+      }
+    }
+    .content {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #FFF;
+      border-radius: 37px 37px 0 0;
+      padding: 41px 152px;
+      text-align: center;
+    }
+  }
+}
+
+main {
+  margin: 200px auto;
+  .projects {
+    .btn-group {
+      width: max-content;
+      margin: 0 auto;
+      display: flex;
+      border: 1px solid var(--primary-1);
+      border-radius: 18px;
+      & button {
+        color: #4D5053;
+        background-color: #FFF;
+      }
+      & .btn-select {
+        background-color: var(--primary-1);
+        color: #FFF;
+      }
+    }
+    .project {
+      /* border: 1px solid red; */
+      margin-top: 61px;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 14px;
+      .card {
+        width: 585px;
+        .content {
+          margin-top: 24px;
+          display: flex;
+          justify-content: space-between;
+          & h3 {
+            line-height: 125%;
+            letter-spacing: 0.5px;
+          }
+          & p {
+            color: #4D5053;
+            font-family: var(--fn-jo);
+            font-size: 22px;
+            line-height: 150%;
+            letter-spacing: 0.22px;
+          }
+        }
+        .imageLarge {
+          width: 100%;
+          height: 853px;
+          overflow: hidden;
+          & img {
+            width: 100%;
+          }
+        }
+        .imageShort {
+          width: 100%;
+          height: 522px;
+          overflow: hidden;
+          & img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .pagination {
+    margin-top: 61px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    & p {
+      color: var(--primary-2);
+      font-family: var(--fn-jo);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 150%;
+
+      border: 1px solid #CDA274;
+      width: 52px;
+      height: 52px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

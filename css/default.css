@@ -59,6 +59,7 @@ h6 {
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.36px;
+  cursor: pointer;
   & svg {
     margin-left: 10px;
   }
@@ -68,11 +69,17 @@ h6 {
   & svg {
     stroke: var(--primary-1);
   }
+  &:hover {
+    background-color: #4D5053;
+  }
 }
 .btn-primary {
   background-color: var(--primary-1);
   & svg {
     stroke: var(--primary-2);
+  }
+  &:hover {
+    background-color: #ceb8a1;
   }
 }
 .warpper {
@@ -110,6 +117,9 @@ header {
         color: var(--primary-2);
       }
     }
+  }
+  & section {
+    margin-top: 57px;
   }
 }
 footer {
