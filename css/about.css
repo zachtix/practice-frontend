@@ -193,7 +193,7 @@ main {
           line-height: 150%;
           letter-spacing: 0.22px;
         }
-        & input {
+        & input, & textarea {
           margin-top: 10px;
           width: 378px;
           border-bottom: 1px solid #000;
@@ -202,13 +202,21 @@ main {
           border-right: 0;
           font-family: var(--fn-jo);
           color: #4D5053;
-          font-size: 22px;
+          font-size: 18px;
           line-height: 150%;
           letter-spacing: 0.22px;
+          &:focus {
+            outline: none;
+          }
         }
         .bigInput {
           width: 100%;
           height: 130px;
+        }
+        & textarea {
+          width: 100%;
+          height: 110px;
+          resize: none;
         }
       }
       .topForm {
