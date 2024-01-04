@@ -1,0 +1,51 @@
+main .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main .header p {
+    width: 610px;
+    text-align: center; }
+
+main .blog {
+  margin: 150px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; }
+  main .blog .first, main .blog .second, main .blog .third {
+    display: flex;
+    gap: 42px; }
+    main .blog .first .card, main .blog .second .card, main .blog .third .card {
+      border-radius: 50px;
+      background-color: #f9f9f9;
+      padding: 41px;
+      width: 670px; }
+      main .blog .first .card .image-box, main .blog .second .card .image-box, main .blog .third .card .image-box {
+        position: relative;
+        border-radius: 50px;
+        overflow: hidden;
+        width: 590px;
+        height: 330px; }
+        main .blog .first .card .image-box .tags, main .blog .second .card .image-box .tags, main .blog .third .card .image-box .tags {
+          position: absolute;
+          left: 20px;
+          bottom: 20px;
+          display: flex;
+          gap: 10px; }
+          main .blog .first .card .image-box .tags h6, main .blog .second .card .image-box .tags h6, main .blog .third .card .image-box .tags h6 {
+            padding: 15px 40px;
+            background-color: #fff;
+            border-radius: 40px; }
+      main .blog .first .card .content, main .blog .second .card .content, main .blog .third .card .content {
+        margin-top: 46px; }
+        main .blog .first .card .content h6, main .blog .second .card .content h6, main .blog .third .card .content h6 {
+          font-weight: 400;
+          color: #797979; }
+        main .blog .first .card .content h6, main .blog .first .card .content p, main .blog .second .card .content h6, main .blog .second .card .content p, main .blog .third .card .content h6, main .blog .third .card .content p {
+          margin-top: 18px;
+          margin-bottom: 38px; }
+        main .blog .first .card .content a, main .blog .second .card .content a, main .blog .third .card .content a {
+          color: #242331;
+          font-weight: 700; }
+          main .blog .first .card .content a:hover, main .blog .second .card .content a:hover, main .blog .third .card .content a:hover {
+            color: #5236ff; }

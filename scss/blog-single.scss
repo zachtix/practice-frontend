@@ -1,0 +1,189 @@
+@import './_variables';
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .blog-banner {
+    .image-banner {
+      border-radius: 50px;
+    }
+    .title {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 90px;
+      .heading {
+        width: 820px;
+      }
+      .blog-detail {
+        border-left: 1px solid #e3e3e3;
+        padding-left: 45px;
+        .writter {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          .detail-writter {
+            h6 {
+              color: $secondary-4;
+            }
+          }
+        }
+        h4 {
+          display: flex;
+          align-items: center;
+        }
+        .tags {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px;
+          h6 {
+            color: $secondary-5;
+            background-color: $primary-1;
+            font-weight: 700;
+            padding: 15px 40px;
+            border-radius: 39px;
+            width: max-content;
+          }
+        }
+      }
+    }
+  }
+  .content-blog {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    .title {
+      width: 1000px;
+    }
+    .subcontent {
+      width: 1000px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      p {
+        width: 900px;
+      }
+      .list-dot {
+        margin-left: 60px;
+        list-style: disc;
+      }
+    }
+    .b-quote {
+      .content {
+        background-color: $secondary-1;
+        p {
+          color: $secondary-3;
+        }
+      }
+    }
+  }
+  .latest-post {
+    margin-top: 330px;
+    margin-bottom: 150px;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      button {
+        background-color: $primary-1;
+        color: $secondary-5;
+      }
+    }
+    .blog {
+      margin: 50px 0;
+      display: flex;
+      gap: 40px;
+      .card {
+        border-radius: 50px;
+        background-color: $secondary-1;
+        padding: 41px;
+        width: 670px;
+        .image-box {
+          position: relative;
+          border-radius: 50px;
+          overflow: hidden;
+          width: 590px;
+          height: 330px;
+          .tags {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            display: flex;
+            gap: 10px;
+            h6 {
+              padding: 15px 40px;
+              background-color: $secondary-5;
+              border-radius: 40px;
+            }
+          }
+        }
+        .content {
+          margin-top: 46px;
+          h6 {
+            font-weight: 400;
+            color: $secondary-4;
+          }
+          h6, p {
+            margin-top: 18px;
+            margin-bottom: 38px;
+          }
+          a {
+            color: $primary-2;
+            font-weight: 700;
+            &:hover {
+              color: $primary-1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .newslatter {
+    position: relative;
+    .content, .image-funtion {
+      position: absolute;
+    }
+    .content {
+      top: 136px;
+      left: 61px;
+      width: 577px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      h1, p {
+        color: $secondary-5;
+      }
+      p {
+        width: 483px;
+      }
+      .input {
+        input {
+          color: $secondary-5;
+          padding: 25px 37px;
+          background-color: rgba(255, 255, 255, 0.20);
+          border: 0;
+          border-radius: 40px;
+          width: 330px;
+          margin-right: 20px;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: $secondary-5;
+          }
+        }
+        button {
+          background-color: $secondary-5;
+          color: $primary-1;
+        }
+      }
+    }
+    .image-funtion {
+      top: 46px;
+      right: 61px;
+    }
+  }
+}

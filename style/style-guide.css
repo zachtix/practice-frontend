@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito;
+  transition: 0.3s; }
+
+h1 {
+  color: #242331;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 125%; }
+  h1.dp-1 {
+    font-size: 75px; }
+
+h2 {
+  color: #242331;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 125%; }
+
+h3 {
+  color: #242331;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 125%; }
+
+h4 {
+  color: #242331;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 125%; }
+
+h5 {
+  color: #242331;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 125%; }
+
+h6 {
+  color: #242331;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 125%; }
+
+p {
+  color: #797979;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 157.4%; }
+  p.large {
+    font-size: 25px; }
+
+button {
+  padding: 25px 58px;
+  color: #242331;
+  font-size: 18px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 39px;
+  cursor: pointer; }
+  button.btn-icon {
+    width: 200px;
+    height: 75px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; }
+    button.btn-icon.btn-apple {
+      background-color: #242331;
+      color: #fff; }
+    button.btn-icon.btn-google {
+      background-color: #fff;
+      border: 1px solid #d9d9d9; }
+  button.btn-cart {
+    padding: 25px 171px;
+    background-color: #5236ff;
+    color: #fff; }
+
+ul {
+  list-style: none;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 274.4%; }
+  ul span {
+    font-weight: 400;
+    color: #797979; }
+
+.b-quote {
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  width: 1000px;
+  height: 356px; }
+  .b-quote .icon {
+    padding: 123px 35px;
+    background-color: #5236ff;
+    font-size: 176px;
+    font-weight: 800;
+    line-height: 110%;
+    color: #fff; }
+  .b-quote .content {
+    display: flex;
+    align-items: center;
+    padding: 100px 54px; }

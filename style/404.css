@@ -1,0 +1,13 @@
+main {
+  width: 780px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 100px; }
+  main h1:first-child {
+    color: #5236ff;
+    font-size: 300px; }
+  main p {
+    margin: 20px 0; }
+  main button {
+    background-color: #5236ff;
+    color: #fff; }

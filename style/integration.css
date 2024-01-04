@@ -1,0 +1,66 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px; }
+  main .header {
+    text-align: center;
+    width: 610px; }
+  main .integrations {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    padding: 0 60px; }
+    main .integrations .first, main .integrations .second {
+      display: flex;
+      gap: 42px; }
+      main .integrations .first .card, main .integrations .second .card {
+        border-radius: 30px;
+        background-color: #f9f9f9;
+        padding: 42px 39px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px; }
+        main .integrations .first .card .social, main .integrations .second .card .social {
+          display: flex;
+          align-items: center;
+          gap: 30px; }
+        main .integrations .first .card a, main .integrations .second .card a {
+          color: #242331;
+          font-weight: 700;
+          width: max-content; }
+          main .integrations .first .card a:hover, main .integrations .second .card a:hover {
+            color: #5236ff; }
+  main .newslatter {
+    position: relative; }
+    main .newslatter .content, main .newslatter .image-funtion {
+      position: absolute; }
+    main .newslatter .content {
+      top: 136px;
+      left: 61px;
+      width: 577px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px; }
+      main .newslatter .content h1, main .newslatter .content p {
+        color: #fff; }
+      main .newslatter .content p {
+        width: 483px; }
+      main .newslatter .content .input input {
+        color: #fff;
+        padding: 25px 37px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 0;
+        border-radius: 40px;
+        width: 330px;
+        margin-right: 20px; }
+        main .newslatter .content .input input:focus {
+          outline: none; }
+        main .newslatter .content .input input::placeholder {
+          color: #fff; }
+      main .newslatter .content .input button {
+        background-color: #fff;
+        color: #5236ff; }
+    main .newslatter .image-funtion {
+      top: 46px;
+      right: 61px; }

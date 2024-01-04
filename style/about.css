@@ -1,0 +1,126 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .banner .title {
+      width: 700px;
+      text-align: center; }
+    main .banner .images {
+      margin-top: 30px;
+      display: flex;
+      gap: 40px; }
+      main .banner .images img {
+        border-radius: 50px; }
+    main .banner .who-we-are {
+      margin-top: 100px;
+      display: flex;
+      gap: 190px; }
+      main .banner .who-we-are h1 {
+        width: max-content; }
+      main .banner .who-we-are .content {
+        width: 900px;
+        display: grid;
+        gap: 30px; }
+  main .counter {
+    margin-top: 190px;
+    display: flex;
+    justify-content: center;
+    gap: 135px;
+    padding: 93px 67px;
+    background-color: #f9f9f9;
+    border-radius: 50px; }
+    main .counter .box {
+      text-align: center; }
+      main .counter .box h1 span {
+        color: #5236ff; }
+      main .counter .box p {
+        font-weight: 700;
+        color: #242331; }
+  main .mission {
+    margin-top: 190px;
+    display: flex;
+    align-items: center;
+    gap: 20px; }
+    main .mission .content {
+      width: 620px; }
+      main .mission .content h1 {
+        margin-bottom: 26px; }
+      main .mission .content p:last-child {
+        margin-top: 30px; }
+    main .mission img {
+      border-radius: 50px; }
+  main .our-value {
+    margin-top: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .our-value .heading {
+      text-align: center;
+      width: 700px; }
+      main .our-value .heading button {
+        background-color: #efecff;
+        color: #5236ff;
+        margin-bottom: 30px; }
+    main .our-value .contents {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px; }
+      main .our-value .contents .card {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        background-color: #f9f9f9;
+        border-radius: 40px;
+        padding: 39px 27px;
+        width: 670px; }
+  main .career {
+    margin: 200px 60px;
+    display: flex;
+    justify-content: center;
+    gap: 93px; }
+    main .career .heading {
+      width: 470px; }
+      main .career .heading button {
+        color: #5236ff;
+        background-color: #efecff;
+        margin-bottom: 30px; }
+    main .career .content {
+      display: grid;
+      gap: 39px; }
+      main .career .content .card {
+        width: 833px;
+        padding: 62px 35px;
+        border-radius: 30px;
+        border: 1px solid #cbcbcb;
+        background-color: #fff; }
+        main .career .content .card h3 {
+          margin-bottom: 13px; }
+        main .career .content .card h5 {
+          margin-bottom: 23px;
+          font-weight: 400; }
+          main .career .content .card h5 span {
+            color: #5236ff; }
+        main .career .content .card p {
+          margin-bottom: 65px; }
+        main .career .content .card button {
+          background-color: #fff;
+          border: 1px solid #D3D3D3; }
+          main .career .content .card button:hover {
+            color: #fff;
+            background-color: #242331; }
+      main .career .content .card-other {
+        width: 833px;
+        padding: 62px 35px;
+        border-radius: 30px;
+        background-color: #5236ff;
+        text-align: center; }
+        main .career .content .card-other h3, main .career .content .card-other p {
+          color: #fff; }
+        main .career .content .card-other p {
+          margin-top: 19px;
+          margin-bottom: 30px; }

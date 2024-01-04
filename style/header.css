@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 60px; }
+  header a {
+    text-decoration: none; }
+    header a .logoBrand {
+      display: flex;
+      align-items: center; }
+      header a .logoBrand .logo {
+        position: relative; }
+        header a .logoBrand .logo img:last-child {
+          position: absolute;
+          left: 0; }
+      header a .logoBrand h3 {
+        margin-left: 10px;
+        font-weight: 800;
+        color: #242331; }
+  header nav {
+    display: flex;
+    align-items: center;
+    gap: 40px; }
+    header nav .menu {
+      display: flex;
+      gap: 60px;
+      padding: 25px 54px;
+      border-radius: 39px;
+      background-color: #f9f9f9; }
+      header nav .menu a {
+        text-decoration: none;
+        color: #242331;
+        font-weight: 600; }
+    header nav button {
+      background-color: #5236ff;
+      color: #fff;
+      font-weight: 700; }

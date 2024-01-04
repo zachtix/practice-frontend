@@ -1,0 +1,114 @@
+@import './_variables';
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      text-align: center;
+      width: 610px;
+    }
+  }
+
+  .analytics, .integration {
+    .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      h1 {
+        text-align: center;
+        width: 570px;
+      }
+      button {
+        background-color: $secondary-2;
+        color: $primary-1;
+      }
+    }
+    .cards {
+      display: flex;
+      gap: 50px;
+      margin-top: 50px;
+      .card {
+        width: 460px;
+        padding: 77px 33px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:nth-child(2) {
+          background-color: #F9F9F9;
+        }
+        img {
+          height: 240px;
+        }
+        .content {
+          margin-top: 60px;
+          text-align: center;
+          p {
+            margin-top: 23px;
+            margin-bottom: 45px;
+          }
+          a {
+            color: $secondary-3;
+            font-weight: 700;
+            &:hover {
+              color: $primary-1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .newslatter {
+    position: relative;
+    .content, .image-funtion {
+      position: absolute;
+    }
+    .content {
+      top: 136px;
+      left: 61px;
+      width: 577px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      h1, p {
+        color: $secondary-5;
+      }
+      p {
+        width: 483px;
+      }
+      .input {
+        input {
+          color: $secondary-5;
+          padding: 25px 37px;
+          background-color: rgba(255, 255, 255, 0.20);
+          border: 0;
+          border-radius: 40px;
+          width: 330px;
+          margin-right: 20px;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: $secondary-5;
+          }
+        }
+        button {
+          background-color: $secondary-5;
+          color: $primary-1;
+        }
+      }
+    }
+    .image-funtion {
+      top: 46px;
+      right: 61px;
+    }
+  }
+}

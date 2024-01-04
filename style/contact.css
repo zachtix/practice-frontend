@@ -1,0 +1,139 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px; }
+  main .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; }
+    main .header .contacts {
+      display: flex;
+      gap: 30px; }
+      main .header .contacts .mail, main .header .contacts .call {
+        padding: 34px;
+        display: flex;
+        align-items: center;
+        gap: 140px;
+        border-radius: 40px;
+        border: 1px solid #E8E8E8;
+        background-color: #fff;
+        box-shadow: 0px 24px 33px 0px rgba(181, 181, 181, 0.25); }
+        main .header .contacts .mail .left, main .header .contacts .call .left {
+          display: flex;
+          align-items: center; }
+  main .form {
+    margin: 0 60px;
+    padding: 92px 76px;
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: 0px 24px 33px 0px rgba(181, 181, 181, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 52px;
+    width: max-content; }
+    main .form .first, main .form .second, main .form .third {
+      display: flex;
+      gap: 50px; }
+      main .form .first .box, main .form .second .box, main .form .third .box {
+        display: flex;
+        flex-direction: column;
+        gap: 17px; }
+        main .form .first .box label, main .form .second .box label, main .form .third .box label {
+          color: #242331;
+          font-family: Nunito;
+          font-size: 20px;
+          font-weight: 600;
+          list-style: 150%; }
+        main .form .first .box input, main .form .first .box textarea, main .form .second .box input, main .form .second .box textarea, main .form .third .box input, main .form .third .box textarea {
+          padding: 31px;
+          font-size: 20px;
+          border-radius: 20px;
+          border: 1px solid #D3D3D3;
+          background-color: #fff;
+          width: 600px; }
+        main .form .first .box textarea, main .form .second .box textarea, main .form .third .box textarea {
+          resize: none;
+          width: 1250px; }
+    main .form button {
+      background-color: #242331;
+      color: #fff;
+      width: max-content; }
+  main .office {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; }
+    main .office h1 {
+      width: 830px;
+      text-align: center; }
+    main .office .cards {
+      display: flex;
+      gap: 40px; }
+      main .office .cards .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 64px;
+        border-radius: 30px;
+        border: 1px solid #E3E3E3;
+        width: 440px;
+        background-color: #fff; }
+        main .office .cards .card h3 {
+          font-weight: 800; }
+        main .office .cards .card p {
+          width: 200px;
+          font-size: 20px;
+          text-align: center; }
+        main .office .cards .card .contact {
+          font-size: 22px;
+          font-weight: 700;
+          border-radius: 39px;
+          padding: 22px 50px;
+          width: max-content; }
+          main .office .cards .card .contact.paris {
+            color: #C1749E;
+            background: #FAD5E9; }
+          main .office .cards .card .contact.ny {
+            color: #D1934B;
+            background-color: #F5E9DB; }
+          main .office .cards .card .contact.hanoi {
+            color: #5B9093;
+            background-color: #CBEFF1; }
+        main .office .cards .card:hover {
+          box-shadow: 0px 17px 14px 0px rgba(217, 217, 217, 0.25); }
+  main .faq {
+    background-color: #5236ff;
+    width: 100%;
+    padding: 190px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px; }
+    main .faq .header h1 {
+      color: #fff; }
+    main .faq .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 34px; }
+      main .faq .content .box {
+        background-color: #fff;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 26px 39px;
+        width: 1000px; }
+        main .faq .content .box button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          background-color: #5236ff;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          padding: 0; }

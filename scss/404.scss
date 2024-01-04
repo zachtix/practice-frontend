@@ -1,0 +1,19 @@
+@import './_variables';
+
+main {
+  width: 780px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  h1:first-child {
+    color: $primary-1;
+    font-size: 300px;
+  }
+  p {
+    margin: 20px 0;
+  }
+  button {
+    background-color: $primary-1;
+    color: $secondary-5;
+  }
+}

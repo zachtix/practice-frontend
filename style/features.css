@@ -1,0 +1,82 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px; }
+  main .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .header p {
+      text-align: center;
+      width: 610px; }
+  main .analytics .heading, main .integration .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; }
+    main .analytics .heading h1, main .integration .heading h1 {
+      text-align: center;
+      width: 570px; }
+    main .analytics .heading button, main .integration .heading button {
+      background-color: #efecff;
+      color: #5236ff; }
+  main .analytics .cards, main .integration .cards {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px; }
+    main .analytics .cards .card, main .integration .cards .card {
+      width: 460px;
+      padding: 77px 33px;
+      border-radius: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .analytics .cards .card:nth-child(2), main .integration .cards .card:nth-child(2) {
+        background-color: #F9F9F9; }
+      main .analytics .cards .card img, main .integration .cards .card img {
+        height: 240px; }
+      main .analytics .cards .card .content, main .integration .cards .card .content {
+        margin-top: 60px;
+        text-align: center; }
+        main .analytics .cards .card .content p, main .integration .cards .card .content p {
+          margin-top: 23px;
+          margin-bottom: 45px; }
+        main .analytics .cards .card .content a, main .integration .cards .card .content a {
+          color: #242331;
+          font-weight: 700; }
+          main .analytics .cards .card .content a:hover, main .integration .cards .card .content a:hover {
+            color: #5236ff; }
+  main .newslatter {
+    position: relative; }
+    main .newslatter .content, main .newslatter .image-funtion {
+      position: absolute; }
+    main .newslatter .content {
+      top: 136px;
+      left: 61px;
+      width: 577px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px; }
+      main .newslatter .content h1, main .newslatter .content p {
+        color: #fff; }
+      main .newslatter .content p {
+        width: 483px; }
+      main .newslatter .content .input input {
+        color: #fff;
+        padding: 25px 37px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 0;
+        border-radius: 40px;
+        width: 330px;
+        margin-right: 20px; }
+        main .newslatter .content .input input:focus {
+          outline: none; }
+        main .newslatter .content .input input::placeholder {
+          color: #fff; }
+      main .newslatter .content .input button {
+        background-color: #fff;
+        color: #5236ff; }
+    main .newslatter .image-funtion {
+      top: 46px;
+      right: 61px; }

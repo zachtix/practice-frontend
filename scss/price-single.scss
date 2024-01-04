@@ -1,0 +1,50 @@
+@import './_variables';
+
+main {
+  padding: 0 60px;
+  .plan-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 190px;
+    .plan {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 72px;
+      border-bottom: 1px solid #d3d3d3;
+      ul {
+        li {
+          display: flex;
+          align-items: center;
+          gap: 35px;
+        }
+      }
+    }
+    .purchase {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 72px;
+      background-color: $secondary-1;
+      border-radius: 50px;
+      padding: 95px 50px;
+      .title {
+        p {
+          width: 490px;
+        }
+      }
+      .price {
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .sub-content {
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}

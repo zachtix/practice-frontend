@@ -1,0 +1,46 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px; }
+  main .header {
+    text-align: center; }
+    main .header h5 {
+      margin-top: 20px;
+      margin-bottom: 50px; }
+      main .header h5 span {
+        color: #5236ff; }
+    main .header button {
+      background-color: #5236ff;
+      color: #fff; }
+  main .job-description {
+    background-color: #f9f9f9;
+    border-radius: 50px;
+    margin: 0 60px;
+    padding: 140px 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px; }
+    main .job-description .about, main .job-description .offer, main .job-description .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 30px; }
+      main .job-description .about .header, main .job-description .offer .header, main .job-description .contact .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        main .job-description .about .header h6, main .job-description .offer .header h6, main .job-description .contact .header h6 {
+          font-weight: 400; }
+          main .job-description .about .header h6 span, main .job-description .offer .header h6 span, main .job-description .contact .header h6 span {
+            color: #797979; }
+      main .job-description .about .list, main .job-description .offer .list, main .job-description .contact .list {
+        list-style: inside; }
+        main .job-description .about .list li span, main .job-description .offer .list li span, main .job-description .contact .list li span {
+          color: #797979; }
+      main .job-description .about .contact-detail p:first-child, main .job-description .offer .contact-detail p:first-child, main .job-description .contact .contact-detail p:first-child {
+        color: #242331;
+        font-weight: 700; }
+  main button {
+    width: max-content;
+    background-color: #242331;
+    color: #fff; }

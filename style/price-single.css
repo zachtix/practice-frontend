@@ -1,0 +1,34 @@
+main {
+  padding: 0 60px; }
+  main .plan-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 190px; }
+    main .plan-box .plan {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 72px;
+      border-bottom: 1px solid #d3d3d3; }
+      main .plan-box .plan ul li {
+        display: flex;
+        align-items: center;
+        gap: 35px; }
+    main .plan-box .purchase {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 72px;
+      background-color: #f9f9f9;
+      border-radius: 50px;
+      padding: 95px 50px; }
+      main .plan-box .purchase .title p {
+        width: 490px; }
+      main .plan-box .purchase .price span {
+        font-size: 20px; }
+  main .sub-content {
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; }

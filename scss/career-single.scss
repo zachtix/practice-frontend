@@ -1,0 +1,66 @@
+@import './_variables';
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  .header {
+    text-align: center;
+    h5 {
+      margin-top: 20px;
+      margin-bottom: 50px;
+      span {
+        color: $primary-1;
+      }
+    }
+    button {
+      background-color: $primary-1;
+      color: $secondary-5;
+    }
+  }
+  .job-description {
+    background-color: $secondary-1;
+    border-radius: 50px;
+    margin: 0 60px;
+    padding: 140px 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    .about, .offer, .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h6 {
+          font-weight: 400;
+          span {
+            color: $secondary-4;
+          }
+        }
+      }
+      .list {
+        list-style: inside;
+        li {
+          span {
+            color: $secondary-4;
+          }
+        }
+      }
+      .contact-detail {
+        p:first-child {
+          color: $secondary-3;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  button {
+    width: max-content;
+    background-color: $primary-2;
+    color: $secondary-5;
+  }
+}

@@ -1,0 +1,29 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; }
+  main .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; }
+    main .header .title {
+      display: flex;
+      align-items: center;
+      gap: 15px; }
+    main .header p {
+      width: 610px;
+      text-align: center; }
+  main .integration {
+    margin: 0 60px;
+    padding: 140px 210px;
+    background-color: #f9f9f9;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px; }
+    main .integration button {
+      width: max-content;
+      background-color: #5236ff;
+      color: #fff; }

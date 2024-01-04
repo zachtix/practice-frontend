@@ -1,0 +1,71 @@
+footer .content-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 60px; }
+  footer .content-footer .saasup {
+    width: 366px; }
+    footer .content-footer .saasup a {
+      text-decoration: none; }
+      footer .content-footer .saasup a .logoBrand {
+        display: flex;
+        align-items: center;
+        margin-bottom: 26px; }
+        footer .content-footer .saasup a .logoBrand .logo {
+          position: relative; }
+          footer .content-footer .saasup a .logoBrand .logo img:last-child {
+            position: absolute;
+            left: 0; }
+        footer .content-footer .saasup a .logoBrand h3 {
+          margin-left: 10px;
+          font-weight: 800;
+          color: #242331; }
+    footer .content-footer .saasup .contact {
+      margin-top: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px; }
+      footer .content-footer .saasup .contact .mail, footer .content-footer .saasup .contact .phone {
+        display: flex;
+        gap: 10px;
+        align-items: center; }
+        footer .content-footer .saasup .contact .mail img, footer .content-footer .saasup .contact .phone img {
+          object-fit: contain; }
+  footer .content-footer .pages, footer .content-footer .utility {
+    width: 180px; }
+    footer .content-footer .pages .list, footer .content-footer .utility .list {
+      border-top: 1px solid #e3e3e3;
+      margin-top: 20px;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px; }
+      footer .content-footer .pages .list a, footer .content-footer .utility .list a {
+        text-decoration: none; }
+  footer .content-footer .app-download {
+    width: 490px;
+    padding: 65px 37px;
+    background-color: #f9f9f9;
+    border-radius: 50px; }
+    footer .content-footer .app-download h6 {
+      color: #5236ff; }
+    footer .content-footer .app-download h3 {
+      margin: 15px 0; }
+    footer .content-footer .app-download .btn {
+      margin-top: 32px;
+      display: flex;
+      justify-content: space-between; }
+
+footer .copyright {
+  margin-top: 230px;
+  padding: 0 60px; }
+  footer .copyright .content {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e3e3e3; }
+    footer .copyright .content .social {
+      display: flex;
+      align-items: center;
+      display: flex;
+      gap: 25px; }

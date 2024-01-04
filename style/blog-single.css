@@ -1,0 +1,139 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main .blog-banner .image-banner {
+    border-radius: 50px; }
+  main .blog-banner .title {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 90px; }
+    main .blog-banner .title .heading {
+      width: 820px; }
+    main .blog-banner .title .blog-detail {
+      border-left: 1px solid #e3e3e3;
+      padding-left: 45px; }
+      main .blog-banner .title .blog-detail .writter {
+        display: flex;
+        align-items: center;
+        gap: 15px; }
+        main .blog-banner .title .blog-detail .writter .detail-writter h6 {
+          color: #797979; }
+      main .blog-banner .title .blog-detail h4 {
+        display: flex;
+        align-items: center; }
+      main .blog-banner .title .blog-detail .tags {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px; }
+        main .blog-banner .title .blog-detail .tags h6 {
+          color: #fff;
+          background-color: #5236ff;
+          font-weight: 700;
+          padding: 15px 40px;
+          border-radius: 39px;
+          width: max-content; }
+  main .content-blog {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px; }
+    main .content-blog .title {
+      width: 1000px; }
+    main .content-blog .subcontent {
+      width: 1000px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px; }
+      main .content-blog .subcontent p {
+        width: 900px; }
+      main .content-blog .subcontent .list-dot {
+        margin-left: 60px;
+        list-style: disc; }
+    main .content-blog .b-quote .content {
+      background-color: #f9f9f9; }
+      main .content-blog .b-quote .content p {
+        color: #242331; }
+  main .latest-post {
+    margin-top: 330px;
+    margin-bottom: 150px; }
+    main .latest-post .title {
+      display: flex;
+      justify-content: space-between; }
+      main .latest-post .title button {
+        background-color: #5236ff;
+        color: #fff; }
+    main .latest-post .blog {
+      margin: 50px 0;
+      display: flex;
+      gap: 40px; }
+      main .latest-post .blog .card {
+        border-radius: 50px;
+        background-color: #f9f9f9;
+        padding: 41px;
+        width: 670px; }
+        main .latest-post .blog .card .image-box {
+          position: relative;
+          border-radius: 50px;
+          overflow: hidden;
+          width: 590px;
+          height: 330px; }
+          main .latest-post .blog .card .image-box .tags {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            display: flex;
+            gap: 10px; }
+            main .latest-post .blog .card .image-box .tags h6 {
+              padding: 15px 40px;
+              background-color: #fff;
+              border-radius: 40px; }
+        main .latest-post .blog .card .content {
+          margin-top: 46px; }
+          main .latest-post .blog .card .content h6 {
+            font-weight: 400;
+            color: #797979; }
+          main .latest-post .blog .card .content h6, main .latest-post .blog .card .content p {
+            margin-top: 18px;
+            margin-bottom: 38px; }
+          main .latest-post .blog .card .content a {
+            color: #242331;
+            font-weight: 700; }
+            main .latest-post .blog .card .content a:hover {
+              color: #5236ff; }
+  main .newslatter {
+    position: relative; }
+    main .newslatter .content, main .newslatter .image-funtion {
+      position: absolute; }
+    main .newslatter .content {
+      top: 136px;
+      left: 61px;
+      width: 577px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px; }
+      main .newslatter .content h1, main .newslatter .content p {
+        color: #fff; }
+      main .newslatter .content p {
+        width: 483px; }
+      main .newslatter .content .input input {
+        color: #fff;
+        padding: 25px 37px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 0;
+        border-radius: 40px;
+        width: 330px;
+        margin-right: 20px; }
+        main .newslatter .content .input input:focus {
+          outline: none; }
+        main .newslatter .content .input input::placeholder {
+          color: #fff; }
+      main .newslatter .content .input button {
+        background-color: #fff;
+        color: #5236ff; }
+    main .newslatter .image-funtion {
+      top: 46px;
+      right: 61px; }

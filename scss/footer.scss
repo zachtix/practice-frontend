@@ -1,0 +1,94 @@
+@import './_variables';
+
+footer {
+  .content-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 60px;
+    .saasup {
+      width: 366px;
+      a {
+        text-decoration: none;
+        .logoBrand {
+          display: flex;
+          align-items: center;
+          margin-bottom: 26px;
+          .logo {
+            position: relative;
+            img:last-child{
+              position: absolute;
+              left: 0;
+            }
+          }
+          h3 {
+            margin-left: 10px;
+            font-weight: 800;
+            color: $secondary-3;
+          }
+        }
+      }
+      .contact {
+        margin-top: 36px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        .mail, .phone {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          img {
+            object-fit: contain;
+          }
+        }
+      }
+    }
+    .pages, .utility {
+      width: 180px;
+      .list {
+        border-top: 1px solid #e3e3e3;
+        margin-top: 20px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    .app-download {
+      width: 490px;
+      padding: 65px 37px;
+      background-color: $secondary-1;
+      border-radius: 50px;
+      h6 {
+        color: $primary-1;
+      }
+      h3 {
+        margin: 15px 0;
+      }
+      .btn {
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .copyright {
+    margin-top: 230px;
+    padding: 0 60px;
+    .content {
+      padding: 30px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #e3e3e3;
+      .social {
+        display: flex;
+        align-items: center;
+        display: flex;
+        gap: 25px;
+      }
+    }
+  }
+}

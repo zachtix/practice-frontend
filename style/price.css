@@ -1,0 +1,146 @@
+main {
+  margin: 100px 0; }
+  main .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .header p {
+      width: 610px;
+      text-align: center; }
+  main .plan {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px; }
+    main .plan .card {
+      background-color: #f9f9f9;
+      border-radius: 20px;
+      padding: 60px 35px;
+      height: max-content; }
+      main .plan .card .plan {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px; }
+      main .plan .card .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        main .plan .card .card-content .price {
+          border-top: 1px solid #d3d3d3;
+          border-bottom: 1px solid #d3d3d3;
+          padding: 23px 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 25px; }
+          main .plan .card .card-content .price h2 span {
+            font-size: 20px; }
+          main .plan .card .card-content .price h5 {
+            color: #C68A15;
+            background-color: #FEC;
+            padding: 10px 30px;
+            border-radius: 40px; }
+        main .plan .card .card-content .plan-features {
+          padding: 30px 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px; }
+      main .plan .card.basic .plan h6 {
+        color: #797979;
+        background-color: #fff;
+        padding: 15px 20px;
+        border-radius: 40px; }
+      main .plan .card.basic .card-content .plan-features span {
+        color: #242331;
+        font-weight: 700; }
+      main .plan .card.basic .card-content button {
+        background-color: #fff;
+        color: #242331;
+        border: 1px solid #d3d3d3; }
+      main .plan .card.advanced {
+        background-color: #5236ff; }
+        main .plan .card.advanced .plan h2 {
+          color: #fff; }
+        main .plan .card.advanced .plan h6 {
+          color: #5236ff;
+          background-color: #efecff;
+          padding: 15px 20px;
+          border-radius: 40px; }
+        main .plan .card.advanced .price h2 {
+          color: #fff; }
+        main .plan .card.advanced .price h5 {
+          background-color: #6950FF;
+          color: #fff; }
+        main .plan .card.advanced .card-content .plan-features p {
+          color: #fff; }
+          main .plan .card.advanced .card-content .plan-features p span {
+            color: #fff;
+            font-weight: 700; }
+        main .plan .card.advanced .card-content button {
+          background-color: #fff;
+          color: #242331;
+          border: 1px solid #d3d3d3; }
+      main .plan .card.pro .plan h6 {
+        color: #5236ff;
+        background-color: #efecff;
+        padding: 15px 20px;
+        border-radius: 40px; }
+      main .plan .card.pro .card-content .plan-features span {
+        color: #5236ff;
+        font-weight: 700; }
+      main .plan .card.pro .card-content button {
+        background-color: #fff;
+        color: #242331;
+        border: 1px solid #d3d3d3; }
+  main .compare-plan {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .compare-plan .price-table {
+      margin-top: 80px;
+      width: 1400px;
+      border-radius: 50px;
+      overflow: hidden;
+      background: #F9F9F9;
+      border-collapse: collapse; }
+      main .compare-plan .price-table th {
+        background-color: #f9f9f9; }
+      main .compare-plan .price-table tr:nth-child(odd) {
+        background-color: #fff; }
+      main .compare-plan .price-table .title-features {
+        height: 180px;
+        font-size: 40px;
+        font-weight: 800;
+        border-bottom: 1px solid #d3d3d3; }
+        main .compare-plan .price-table .title-features h5 {
+          font-size: 15px;
+          font-weight: 600; }
+      main .compare-plan .price-table .heading-features {
+        height: 100px;
+        color: #5236ff;
+        font-weight: 600; }
+      main .compare-plan .price-table .detail-features {
+        height: 100px;
+        font-size: 20px;
+        color: #797979; }
+        main .compare-plan .price-table .detail-features td:not(:first-child) {
+          text-align: center; }
+      main .compare-plan .price-table .heading-features td:first-child, main .compare-plan .price-table .detail-features td:first-child {
+        max-width: 200px;
+        padding-left: 80px; }
+      main .compare-plan .price-table .btn-plan {
+        height: 150px; }
+        main .compare-plan .price-table .btn-plan td {
+          text-align: center; }
+        main .compare-plan .price-table .btn-plan button {
+          border-radius: 40px;
+          border: 1px solid #D3D3D3;
+          background-color: #fff;
+          color: #242331;
+          font-weight: 700; }
+        main .compare-plan .price-table .btn-plan .btn-advanced {
+          background-color: #242331;
+          color: #fff; }

@@ -1,0 +1,49 @@
+@import './_variables';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 60px;
+  a {
+    text-decoration: none;
+    .logoBrand {
+      display: flex;
+      align-items: center;
+      // cursor: pointer;
+      .logo {
+        position: relative;
+        img:last-child{
+          position: absolute;
+          left: 0;
+        }
+      }
+      h3 {
+        margin-left: 10px;
+        font-weight: 800;
+        color: $secondary-3;
+      }
+    }
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    .menu {
+      display: flex;
+      gap: 60px;
+      padding: 25px 54px;
+      border-radius: 39px;
+      background-color: rgba($color: $secondary-1, $alpha: 1.0);
+      a {
+        text-decoration: none;
+        color: $secondary-3;
+        font-weight: 600;
+      }
+    }
+    button {
+      background-color: $primary-1;
+      color: $secondary-5;
+      font-weight: 700;
+    }
+  }
+}

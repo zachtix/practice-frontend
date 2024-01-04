@@ -1,0 +1,317 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+  margin: 100px 0; }
+  main .header {
+    display: flex;
+    align-items: center;
+    gap: 24px; }
+    main .header .content {
+      width: 610px; }
+      main .header .content p {
+        margin-top: 16px;
+        margin-bottom: 48px; }
+      main .header .content .button {
+        display: flex;
+        gap: 20px; }
+        main .header .content .button button {
+          display: flex;
+          align-items: center;
+          gap: 10px; }
+          main .header .content .button button img {
+            height: 32px; }
+  main .feature .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; }
+    main .feature .heading h1 {
+      text-align: center;
+      width: 570px; }
+    main .feature .heading button {
+      background-color: #efecff;
+      color: #5236ff; }
+  main .feature .cards {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px; }
+    main .feature .cards .card {
+      width: 460px;
+      padding: 77px 33px;
+      border-radius: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .feature .cards .card:nth-child(2) {
+        background-color: #F9F9F9; }
+      main .feature .cards .card img {
+        height: 240px; }
+      main .feature .cards .card .content {
+        margin-top: 60px;
+        text-align: center; }
+        main .feature .cards .card .content p {
+          margin-top: 23px;
+          margin-bottom: 45px; }
+        main .feature .cards .card .content a {
+          color: #242331;
+          font-weight: 700; }
+          main .feature .cards .card .content a:hover {
+            color: #5236ff; }
+  main .about-us {
+    display: flex;
+    gap: 600px; }
+    main .about-us .content {
+      width: 920px;
+      background-color: #f9f9f9;
+      border-radius: 50px;
+      padding: 176px 51px;
+      padding-right: 270px; }
+      main .about-us .content h1 {
+        margin-bottom: 26px; }
+      main .about-us .content .cost {
+        margin-top: 42px;
+        display: flex;
+        align-items: center;
+        gap: 15px; }
+    main .about-us .image-box {
+      position: relative; }
+      main .about-us .image-box img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0; }
+  main .how-it-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .how-it-work .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .how-it-work .heading button {
+        margin-bottom: 50px; }
+      main .how-it-work .heading h1 {
+        text-align: center;
+        width: 500px; }
+    main .how-it-work .title {
+      margin-top: 49px;
+      margin-bottom: 79px;
+      display: flex;
+      gap: 29px; }
+      main .how-it-work .title h3 {
+        padding: 40px 90px;
+        border-radius: 20px;
+        background-color: #f9f9f9; }
+        main .how-it-work .title h3:first-child {
+          background-color: #5236ff;
+          color: #fff; }
+    main .how-it-work .content {
+      display: flex;
+      align-items: center;
+      gap: 90px; }
+      main .how-it-work .content .subcontent {
+        width: 580px; }
+        main .how-it-work .content .subcontent .heading-content {
+          width: 500px;
+          display: flex;
+          gap: 23px;
+          margin-bottom: 22px; }
+        main .how-it-work .content .subcontent button {
+          margin-top: 40px;
+          background-color: #242331;
+          color: #fff; }
+  main .testimorial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: #5236ff;
+    padding: 200px 440px; }
+    main .testimorial .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .testimorial .heading button {
+        color: #fff;
+        background-color: #6850ff; }
+      main .testimorial .heading h1 {
+        color: #fff; }
+    main .testimorial .content h1 {
+      font-size: 100px; }
+    main .testimorial .content h1, main .testimorial .content p {
+      text-align: center;
+      color: #fff; }
+    main .testimorial .user {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px; }
+      main .testimorial .user h3, main .testimorial .user h5 {
+        color: #fff; }
+  main .pricing {
+    display: flex;
+    align-items: center;
+    gap: 40px; }
+    main .pricing .content {
+      width: 440px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px; }
+      main .pricing .content button {
+        background-color: #efecff;
+        color: #5236ff;
+        width: max-content; }
+      main .pricing .content .upi-card {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f9f9f9;
+        border-radius: 20px;
+        padding: 20px;
+        overflow: hidden; }
+    main .pricing .prices {
+      display: flex;
+      gap: 20px; }
+      main .pricing .prices .card {
+        background-color: #f9f9f9;
+        border-radius: 20px;
+        padding: 60px 35px;
+        height: max-content; }
+        main .pricing .prices .card .plan {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 30px; }
+        main .pricing .prices .card .card-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          main .pricing .prices .card .card-content .price {
+            border-top: 1px solid #d3d3d3;
+            border-bottom: 1px solid #d3d3d3;
+            padding: 23px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px; }
+            main .pricing .prices .card .card-content .price h2 span {
+              font-size: 20px; }
+            main .pricing .prices .card .card-content .price h5 {
+              color: #C68A15;
+              background-color: #FEC;
+              padding: 10px 30px;
+              border-radius: 40px; }
+          main .pricing .prices .card .card-content .plan-features {
+            padding: 30px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; }
+        main .pricing .prices .card.basic .plan h6 {
+          color: #797979;
+          background-color: #fff;
+          padding: 15px 20px;
+          border-radius: 40px; }
+        main .pricing .prices .card.basic .card-content .plan-features span {
+          color: #242331;
+          font-weight: 700; }
+        main .pricing .prices .card.basic .card-content button {
+          background-color: #fff;
+          color: #242331;
+          border: 1px solid #d3d3d3; }
+        main .pricing .prices .card.advanced .plan h6 {
+          color: #5236ff;
+          background-color: #efecff;
+          padding: 15px 20px;
+          border-radius: 40px; }
+        main .pricing .prices .card.advanced .card-content .plan-features span {
+          color: #5236ff;
+          font-weight: 700; }
+        main .pricing .prices .card.advanced .card-content button {
+          background-color: #fff;
+          color: #242331;
+          border: 1px solid #d3d3d3; }
+  main .newslatter {
+    position: relative; }
+    main .newslatter .content, main .newslatter .image-funtion {
+      position: absolute; }
+    main .newslatter .content {
+      top: 136px;
+      left: 61px;
+      width: 577px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px; }
+      main .newslatter .content h1, main .newslatter .content p {
+        color: #fff; }
+      main .newslatter .content p {
+        width: 483px; }
+      main .newslatter .content .input input {
+        color: #fff;
+        padding: 25px 37px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 0;
+        border-radius: 40px;
+        width: 330px;
+        margin-right: 20px; }
+        main .newslatter .content .input input:focus {
+          outline: none; }
+        main .newslatter .content .input input::placeholder {
+          color: #fff; }
+      main .newslatter .content .input button {
+        background-color: #fff;
+        color: #5236ff; }
+    main .newslatter .image-funtion {
+      top: 46px;
+      right: 61px; }
+  main .blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px; }
+    main .blog .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .blog .heading button {
+        background-color: #efecff;
+        color: #5236ff;
+        cursor: default; }
+    main .blog .blogs {
+      display: flex;
+      gap: 42px; }
+      main .blog .blogs .card {
+        border-radius: 50px;
+        background-color: #f9f9f9;
+        padding: 41px;
+        width: 670px; }
+        main .blog .blogs .card .image-box {
+          position: relative;
+          border-radius: 50px;
+          overflow: hidden;
+          width: 590px;
+          height: 330px; }
+          main .blog .blogs .card .image-box .tags {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            display: flex;
+            gap: 10px; }
+            main .blog .blogs .card .image-box .tags h6 {
+              padding: 15px 40px;
+              background-color: #fff;
+              border-radius: 40px; }
+        main .blog .blogs .card .content {
+          margin-top: 46px; }
+          main .blog .blogs .card .content h6 {
+            font-weight: 400;
+            color: #797979; }
+          main .blog .blogs .card .content h6, main .blog .blogs .card .content p {
+            margin-top: 18px;
+            margin-bottom: 38px; }
+          main .blog .blogs .card .content a {
+            color: #242331;
+            font-weight: 700; }
+            main .blog .blogs .card .content a:hover {
+              color: #5236ff; }

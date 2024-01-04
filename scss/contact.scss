@@ -1,0 +1,171 @@
+@import './_variables';
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    .contacts {
+      display: flex;
+      gap: 30px;
+      .mail, .call {
+        padding: 34px;
+        display: flex;
+        align-items: center;
+        gap: 140px;
+        border-radius: 40px;
+        border: 1px solid #E8E8E8;
+        background-color: $secondary-5;
+        box-shadow: 0px 24px 33px 0px rgba(181, 181, 181, 0.25);
+        .left {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .form {
+    margin: 0 60px;
+    padding: 92px 76px;
+    border-radius: 40px;
+    background-color: $secondary-5;
+    box-shadow: 0px 24px 33px 0px rgba(181, 181, 181, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 52px;
+    width: max-content;
+    .first, .second, .third {
+      display: flex;
+      gap: 50px;
+      .box {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        label {
+          color: $secondary-3;
+          font-family: $fn-nunito;
+          font-size: 20px;
+          font-weight: 600;
+          list-style: 150%;
+        }
+        input, textarea {
+          padding: 31px;
+          font-size: 20px;
+          border-radius: 20px;
+          border: 1px solid #D3D3D3;
+          background-color: $secondary-5;
+          width: 600px;
+        }
+        textarea {
+          resize: none;
+          width: 1250px;
+        }
+      }
+    }
+    button {
+      background-color: $primary-2;
+      color: $secondary-5;
+      width: max-content;
+    }
+  }
+  .office {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    h1 {
+      width: 830px;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      gap: 40px;
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 64px;
+        border-radius: 30px;
+        border: 1px solid #E3E3E3;
+        width: 440px;
+        background-color: $secondary-5;
+        h3 {
+          font-weight: 800;
+        }
+        p {
+          width: 200px;
+          font-size: 20px;
+          text-align: center;
+        }
+        .contact {
+          font-size: 22px;
+          font-weight: 700;
+          border-radius: 39px;
+          padding: 22px 50px;
+          width: max-content;
+          &.paris {
+            color: #C1749E;
+            background: #FAD5E9;
+          }
+          &.ny {
+            color: #D1934B;
+            background-color: #F5E9DB;
+          }
+          &.hanoi {
+            color: #5B9093;
+            background-color: #CBEFF1;
+          }
+        }
+        &:hover {
+          box-shadow: 0px 17px 14px 0px rgba(217, 217, 217, 0.25);
+        }
+      }
+    }
+  }
+  .faq {
+    background-color: $primary-1;
+    width: 100%;
+    padding: 190px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    .header {
+      h1 {
+        color: $secondary-5;
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 34px;
+      .box {
+        background-color: $secondary-5;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 26px 39px;
+        width: 1000px;
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $secondary-5;
+          background-color: $primary-1;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

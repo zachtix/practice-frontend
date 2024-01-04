@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+@import './_variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fn-nunito;
+  transition: 0.3s;
+}
+
+h1 {
+  color: $primary-2;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 125%;
+  &.dp-1 {
+    font-size: 75px;
+  }
+}
+
+h2 {
+  color: $primary-2;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+h3 {
+  color: $primary-2;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+h4 {
+  color: $primary-2;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+h5 {
+  color: $primary-2;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+h6 {
+  color: $primary-2;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+p {
+  color: $secondary-4;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 157.4%;
+  &.large {
+    font-size: 25px;
+  }
+}
+
+button {
+  padding: 25px 58px;
+  color: $secondary-3;
+  font-size: 18px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 39px;
+  cursor: pointer;
+  &.btn-icon {
+    width: 200px;
+    height: 75px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    &.btn-apple {
+      background-color: $primary-2;
+      color: $secondary-5;
+    }
+    &.btn-google {
+      background-color: $secondary-5;
+      border: 1px solid #d9d9d9;
+    }
+  }
+  &.btn-cart {
+    padding: 25px 171px;
+    background-color: $primary-1;
+    color: $secondary-5;
+  }
+}
+
+ul {
+  list-style: none;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 274.4%;
+  // color: $secondary-4;
+  & span {
+    font-weight: 400;
+    color: $secondary-4;
+  }
+}
+
+.b-quote {
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  width: 1000px;
+  height: 356px;
+  .icon {
+    padding: 123px 35px;
+    background-color: $primary-1;
+    font-size: 176px;
+    font-weight: 800;
+    line-height: 110%;
+    color: $secondary-5;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    padding: 100px 54px;
+  }
+}

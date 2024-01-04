@@ -1,0 +1,83 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px; }
+  main .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; }
+    main .header p {
+      width: 600px;
+      text-align: center; }
+  main .images {
+    display: flex;
+    justify-content: center;
+    gap: 40px; }
+    main .images img {
+      border-radius: 50px; }
+  main .value .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; }
+    main .value .heading button {
+      background-color: #EFECFF;
+      color: #5236ff; }
+  main .value .values {
+    margin: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+    main .value .values .first, main .value .values .second {
+      display: flex;
+      gap: 20px; }
+    main .value .values .card {
+      width: 450px;
+      padding: 50px;
+      border: 1px solid #f6f6f6;
+      border-radius: 40px; }
+      main .value .values .card h3 {
+        margin-top: 38px;
+        margin-bottom: 19px; }
+  main .job {
+    margin: 30px 60px; }
+    main .job .heading {
+      text-align: center;
+      margin-bottom: 40px; }
+    main .job .jobs {
+      display: flex;
+      flex-direction: column;
+      gap: 20px; }
+      main .job .jobs .first, main .job .jobs .second, main .job .jobs .third {
+        display: flex;
+        gap: 24px; }
+        main .job .jobs .first .card, main .job .jobs .second .card, main .job .jobs .third .card {
+          width: 680px;
+          padding: 62px 35px;
+          border-radius: 30px;
+          border: 1px solid #cbcbcb;
+          background-color: #fff; }
+          main .job .jobs .first .card h3, main .job .jobs .second .card h3, main .job .jobs .third .card h3 {
+            margin-bottom: 13px; }
+          main .job .jobs .first .card h5, main .job .jobs .second .card h5, main .job .jobs .third .card h5 {
+            margin-bottom: 23px;
+            font-weight: 400; }
+            main .job .jobs .first .card h5 span, main .job .jobs .second .card h5 span, main .job .jobs .third .card h5 span {
+              color: #5236ff; }
+          main .job .jobs .first .card p, main .job .jobs .second .card p, main .job .jobs .third .card p {
+            margin-bottom: 65px; }
+          main .job .jobs .first .card button, main .job .jobs .second .card button, main .job .jobs .third .card button {
+            background-color: #fff;
+            border: 1px solid #D3D3D3; }
+          main .job .jobs .first .card:hover, main .job .jobs .second .card:hover, main .job .jobs .third .card:hover {
+            background-color: #5236ff; }
+            main .job .jobs .first .card:hover h3, main .job .jobs .second .card:hover h3, main .job .jobs .third .card:hover h3 {
+              color: #fff; }
+            main .job .jobs .first .card:hover h5, main .job .jobs .second .card:hover h5, main .job .jobs .third .card:hover h5 {
+              color: #fff; }
+              main .job .jobs .first .card:hover h5 span, main .job .jobs .second .card:hover h5 span, main .job .jobs .third .card:hover h5 span {
+                color: #fff; }
+            main .job .jobs .first .card:hover p, main .job .jobs .second .card:hover p, main .job .jobs .third .card:hover p {
+              color: #fff; }

@@ -1,0 +1,24 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; }
+  main .licenses-box {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin: 0 60px;
+    padding: 110px 95px;
+    background-color: #f9f9f9;
+    border-radius: 50px; }
+    main .licenses-box .pexels h3, main .licenses-box .unsplash h3, main .licenses-box .fontawesome h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px; }
+    main .licenses-box .icon p:last-child {
+      margin-top: 30px; }
+    main .licenses-box a {
+      text-decoration: none;
+      color: #5236ff; }
+    main .licenses-box div h1, main .licenses-box div h3 {
+      margin-bottom: 16px; }

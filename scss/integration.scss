@@ -1,0 +1,88 @@
+@import './_variables';
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
+  .header {
+    text-align: center;
+    width: 610px;
+  }
+  .integrations {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    padding: 0 60px;
+    .first, .second {
+      display: flex;
+      gap: 42px;
+      .card {
+        border-radius: 30px;
+        background-color: $secondary-1;
+        padding: 42px 39px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .social {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+        }
+        a {
+          color: $secondary-3;
+          font-weight: 700;
+          width: max-content;
+          &:hover {
+            color: $primary-1;
+          }
+        }
+      }
+    }
+  }
+  .newslatter {
+    position: relative;
+    .content, .image-funtion {
+      position: absolute;
+    }
+    .content {
+      top: 136px;
+      left: 61px;
+      width: 577px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      h1, p {
+        color: $secondary-5;
+      }
+      p {
+        width: 483px;
+      }
+      .input {
+        input {
+          color: $secondary-5;
+          padding: 25px 37px;
+          background-color: rgba(255, 255, 255, 0.20);
+          border: 0;
+          border-radius: 40px;
+          width: 330px;
+          margin-right: 20px;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: $secondary-5;
+          }
+        }
+        button {
+          background-color: $secondary-5;
+          color: $primary-1;
+        }
+      }
+    }
+    .image-funtion {
+      top: 46px;
+      right: 61px;
+    }
+  }
+}
