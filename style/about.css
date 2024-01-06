@@ -1,0 +1,114 @@
+body {
+  background: linear-gradient(180deg, #3B2A9F 33.88%, rgba(47, 69, 182, 0.44) 81.32%, rgba(114, 138, 185, 0.23) 99.57%); }
+
+main .sectionHero {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between; }
+  main .sectionHero .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 70px;
+    color: #FFF; }
+    main .sectionHero .heading p span {
+      color: #E47500; }
+    main .sectionHero .heading button {
+      background: linear-gradient(92deg, #FA8305 2.08%, #FB9E3C 117.25%);
+      border: 0;
+      width: max-content;
+      padding: 10px 20px;
+      border-radius: 50px;
+      color: #FFF; }
+  main .sectionHero .imageBox {
+    width: 700px; }
+    main .sectionHero .imageBox img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover; }
+
+main .whyWork {
+  padding: 0 30px;
+  color: #FFF;
+  margin: 150px 0; }
+  main .whyWork .content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; }
+    main .whyWork .content .card {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 64px 37px;
+      background-color: #1C140F;
+      border-radius: 20px; }
+      main .whyWork .content .card p:first-child {
+        padding: 10px 25px;
+        background-color: #00DC8D1C;
+        width: max-content;
+        border-radius: 8px; }
+
+main .article {
+  padding: 0 30px;
+  background-color: #1C140F;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  color: #FFF; }
+  main .article .imageBox img {
+    width: 490px;
+    aspect-ratio: 1/1;
+    object-fit: cover; }
+  main .article .content {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px; }
+
+main .team {
+  padding: 0 30px;
+  color: #FFF;
+  margin: 150px 0; }
+  main .team .content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between; }
+    main .team .content .card {
+      background-color: #1C140F;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      border-radius: 20px;
+      aspect-ratio: 1/1; }
+      main .team .content .card img {
+        width: 120px;
+        object-fit: cover;
+        aspect-ratio: 1/1; }
+
+@media (max-width: 800px) {
+  main .sectionHero .heading {
+    gap: 20px; }
+  main .whyWork .content {
+    flex-wrap: wrap; }
+  main .article {
+    flex-wrap: wrap;
+    gap: 10px; }
+    main .article .imageBox img {
+      width: 100%;
+      aspect-ratio: 16/9; }
+    main .article .content {
+      padding: 50px 20px; }
+  main .team .content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; } }
+
+@media (max-width: 480px) {
+  main .sectionHero {
+    flex-direction: column;
+    gap: 30px; }
+    main .sectionHero .imageBox {
+      width: 100%; } }

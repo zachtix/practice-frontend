@@ -1,0 +1,229 @@
+body {
+  background: linear-gradient(177deg, #3A299F -30.15%, #05119D 24.94%, #2351F5 92.85%);
+}
+main {
+  .header {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    color: #FFF;
+    p {
+      span {
+        color: #E47500;
+      }
+    }
+  }
+  .counterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+    color: #FFF;
+    background-color: #1C140F;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 1100px;
+    padding: 40px 90px;
+    .counter {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      img {
+        width: 55px;
+        height: 55px;
+        padding: 15px;
+        background-color: #FFECEC;
+        border-radius: 70px;
+      }
+      h5 {
+        font-weight: 400;
+      }
+    }
+  }
+  .service {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    gap: 50px;
+    .cardVideo {
+      margin: 130px 130px;
+      display: flex;
+      gap: 80px;
+      height: 350px;
+      .imageBox {
+        position: relative;
+        img {
+          &:first-child {
+            border-radius: 16px;
+            aspect-ratio: 16/9;
+            height: 100%;
+          }
+          &:last-child {
+            position: absolute;
+            top: 50%;
+            // transform: translateX(-50%);
+            left: 50%;
+            // transform: translateY(-50%);
+          }
+        }
+      }
+      .content {
+        color: #FFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+      }
+    }
+    .card {
+      margin: 0 130px;
+      display: flex;
+      justify-content: space-between;
+      height: 500px;
+      color: #FFF;
+      .content {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        button {
+          width: max-content;
+          background-color: #DC7000;
+          color: #FFF;
+          border: 0;
+          padding: 15px 40px;
+        }
+      }
+      .imageBox {
+        display: flex;
+        justify-content: end;
+        width: 40%;
+        img {
+          // width: 100%;
+          height: 100%;
+          aspect-ratio: 1/1;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+@media (max-width:800px){
+  main {
+    .counterContainer {
+      width: 80%;
+      gap: 20px;
+    }
+    .service {
+      .cardVideo {
+        margin: 50px 30px;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        .imageBox {
+          margin: 0 auto;
+          img {
+            // width: 100%;
+            &:first-child {
+              border-radius: 16px;
+              aspect-ratio: 16/9;
+              width: 90%;
+            }
+            &:last-child {
+              top: 45%;
+              left: 45%;
+            }
+          }
+        }
+      }
+      .card {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: max-content;
+        padding: 0 30px;
+        margin: 0;
+        .imageBox{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          img {
+            height: 300px;
+            aspect-ratio: 16/9;
+          }
+        }
+        .content {
+          width: 100%;
+          gap: 20px;
+        }
+        &.right {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+@media (max-width:480px){
+  main {
+    .counterContainer {
+      width: 80%;
+      flex-direction: column;
+      .line {
+        rotate: 90deg;
+      }
+    }
+    .service {
+      .cardVideo {
+        margin: 20px 10px;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        height: auto;
+        .imageBox {
+          margin: 0 auto;
+          img {
+            // width: 100%;
+            &:first-child {
+              border-radius: 16px;
+              aspect-ratio: 16/9;
+              width: 90%;
+            }
+            &:last-child {
+              top: 30%;
+              left: 40%;
+            }
+          }
+        }
+        .content {
+          gap: 20px;
+          p {
+            width: 90%;
+          }
+        }
+      }
+      .card {
+        .imageBox{
+          img {
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}

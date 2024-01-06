@@ -1,0 +1,143 @@
+body {
+  background: linear-gradient(176deg, #3165CB -34.57%, #030115 96.75%); }
+
+main {
+  margin-top: 100px; }
+  main .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: #FFF; }
+    main .header p span {
+      color: #E47500; }
+    main .header .searchBox {
+      margin-top: 70px;
+      width: 400px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: #1C140F;
+      padding: 10px 25px;
+      border-radius: 10px; }
+      main .header .searchBox input {
+        width: 100%;
+        height: 30px;
+        background-color: transparent;
+        border: 0;
+        color: #FFF; }
+        main .header .searchBox input:focus {
+          outline: none; }
+  main .article {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin: 100px 130px; }
+    main .article .big {
+      display: flex;
+      flex-direction: column;
+      gap: 90px; }
+      main .article .big .card {
+        width: 580px;
+        color: #FFF; }
+        main .article .big .card img {
+          width: 100%;
+          height: 350px;
+          object-fit: cover;
+          border-radius: 20px; }
+        main .article .big .card .content {
+          margin-top: 15px;
+          display: flex;
+          flex-direction: column;
+          gap: 30px; }
+          main .article .big .card .content .author {
+            display: flex; }
+            main .article .big .card .content .author p {
+              padding: 10px 30px; }
+              main .article .big .card .content .author p:first-child {
+                background-color: #2351F5; }
+          main .article .big .card .content .detail {
+            display: flex;
+            flex-direction: column;
+            gap: 30px; }
+        main .article .big .card:last-child {
+          border-top: 0.7px solid #A5A5A5;
+          padding-top: 90px; }
+    main .article .small {
+      color: #FFF;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      main .article .small .card {
+        width: 610px;
+        height: 190px;
+        display: flex;
+        align-items: center;
+        gap: 30px; }
+        main .article .small .card img {
+          width: 190px;
+          height: 190px;
+          object-fit: cover;
+          border-radius: 20px; }
+        main .article .small .card .content {
+          margin-top: 15px;
+          display: flex;
+          flex-direction: column;
+          gap: 30px; }
+          main .article .small .card .content .author {
+            display: flex; }
+            main .article .small .card .content .author p {
+              padding: 10px 30px; }
+        main .article .small .card:nth-child(1) .content p:first-child {
+          background-color: #FF8484; }
+        main .article .small .card:nth-child(2) .content p:first-child {
+          background-color: #2351F5; }
+        main .article .small .card:nth-child(3) .content p:first-child {
+          background-color: #FF7C32; }
+        main .article .small .card:nth-child(4) .content p:first-child {
+          background-color: #2351F5; }
+        main .article .small .card:nth-child(5) .content p:first-child {
+          background-color: #23A54F; }
+        main .article .small .card:nth-child(6) .content p:first-child {
+          background-color: #2351F5; }
+        main .article .small .card:nth-child(7) .content p:first-child {
+          background-color: #9921C3; }
+
+@media (max-width: 800px) {
+  main .header {
+    text-align: center; }
+  main .article {
+    flex-direction: column;
+    align-items: center; }
+    main .article .small {
+      gap: 30px; } }
+
+@media (max-width: 480px) {
+  main .header .searchBox {
+    width: 80%; }
+  main .article {
+    margin: 100px 30px;
+    gap: 200px; }
+    main .article .big .card {
+      width: 100%; }
+      main .article .big .card img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9; }
+    main .article .small .card {
+      flex-direction: column;
+      width: 100%;
+      gap: 5px;
+      height: auto; }
+      main .article .small .card img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9; }
+      main .article .small .card .content {
+        gap: 5px; }
+        main .article .small .card .content .author {
+          width: max-content;
+          padding: 8px 16px; }
+        main .article .small .card .content .title {
+          width: 100%; } }

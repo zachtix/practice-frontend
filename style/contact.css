@@ -1,0 +1,129 @@
+body {
+  background: linear-gradient(176deg, #2211E7 -26.24%, #383837 96.98%); }
+
+main {
+  margin-top: 100px; }
+  main .map .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: #FFF; }
+    main .map .heading p span {
+      color: #E47500; }
+  main .map .imageContainer {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center; }
+    main .map .imageContainer .pinMap {
+      position: absolute;
+      top: 280px;
+      left: 1200px; }
+  main .map .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 0 130px;
+    margin-top: 60px;
+    color: #FFF; }
+    main .map .contact .follow .social {
+      margin-top: 15px;
+      display: flex;
+      gap: 16px; }
+      main .map .contact .follow .social button {
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1C140F;
+        border-radius: 50%;
+        border: 0; }
+    main .map .contact .phone h5, main .map .contact .location h5 {
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      gap: 15px; }
+  main .contactForm {
+    background-color: #1C140F;
+    padding: 60px 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px 0; }
+    main .contactForm .heading {
+      color: #FFF;
+      text-align: center; }
+    main .contactForm .forms {
+      margin-top: 80px;
+      width: 670px;
+      color: #4F4F4F;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 20px; }
+      main .contactForm .forms .form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; }
+        main .contactForm .forms .form input, main .contactForm .forms .form textarea {
+          border: 0.6px solid #CECECE;
+          border-radius: 9px;
+          background-color: rgba(255, 255, 255, 0.07);
+          resize: none;
+          color: #FFF;
+          padding: 10px;
+          width: 670px; }
+          main .contactForm .forms .form input:focus, main .contactForm .forms .form textarea:focus {
+            outline: none; }
+      main .contactForm .forms .groupForm {
+        width: 670px;
+        display: flex;
+        gap: 30px; }
+        main .contactForm .forms .groupForm input {
+          width: 320px; }
+      main .contactForm .forms button {
+        background-color: #db7100;
+        border: 0;
+        border-radius: 10px;
+        color: #FFF;
+        padding: 20px 50px;
+        font-size: 16px;
+        margin-top: 50px;
+        cursor: pointer; }
+        main .contactForm .forms button:hover {
+          background-color: #ffa442; }
+
+@media (max-width: 800px) {
+  main .map .heading {
+    text-align: center; }
+  main .map .imageContainer {
+    margin: 50px 30px; }
+    main .map .imageContainer img {
+      width: 100%; }
+  main .map .contact {
+    margin: 0 30px;
+    gap: 40px; }
+  main .contactForm {
+    padding: 60px 30px; } }
+
+@media (max-width: 480px) {
+  main {
+    overflow: hidden; }
+    main .map .contact {
+      gap: 10px;
+      flex-direction: column; }
+      main .map .contact .line {
+        rotate: 90deg; }
+    main .contactForm .forms {
+      width: 100%;
+      align-items: start;
+      gap: 10; }
+      main .contactForm .forms .groupForm {
+        gap: 10;
+        flex-direction: column; }
+      main .contactForm .forms .form input, main .contactForm .forms .form textarea {
+        width: 330px; }
+      main .contactForm .forms button {
+        margin: 0 auto; } }

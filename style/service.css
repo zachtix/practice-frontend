@@ -1,0 +1,166 @@
+body {
+  background: linear-gradient(177deg, #3A299F -30.15%, #05119D 24.94%, #2351F5 92.85%); }
+
+main .header {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  color: #FFF; }
+  main .header p span {
+    color: #E47500; }
+
+main .counterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 110px;
+  color: #FFF;
+  background-color: #1C140F;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 1100px;
+  padding: 40px 90px; }
+  main .counterContainer .counter {
+    display: flex;
+    align-items: center;
+    gap: 35px; }
+    main .counterContainer .counter img {
+      width: 55px;
+      height: 55px;
+      padding: 15px;
+      background-color: #FFECEC;
+      border-radius: 70px; }
+    main .counterContainer .counter h5 {
+      font-weight: 400; }
+
+main .service {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  gap: 50px; }
+  main .service .cardVideo {
+    margin: 130px 130px;
+    display: flex;
+    gap: 80px;
+    height: 350px; }
+    main .service .cardVideo .imageBox {
+      position: relative; }
+      main .service .cardVideo .imageBox img:first-child {
+        border-radius: 16px;
+        aspect-ratio: 16/9;
+        height: 100%; }
+      main .service .cardVideo .imageBox img:last-child {
+        position: absolute;
+        top: 50%;
+        left: 50%; }
+    main .service .cardVideo .content {
+      color: #FFF;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%; }
+      main .service .cardVideo .content ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 30px; }
+        main .service .cardVideo .content ul li {
+          display: flex;
+          align-items: center;
+          gap: 10px; }
+  main .service .card {
+    margin: 0 130px;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    color: #FFF; }
+    main .service .card .content {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      main .service .card .content button {
+        width: max-content;
+        background-color: #DC7000;
+        color: #FFF;
+        border: 0;
+        padding: 15px 40px; }
+    main .service .card .imageBox {
+      display: flex;
+      justify-content: end;
+      width: 40%; }
+      main .service .card .imageBox img {
+        height: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover; }
+
+@media (max-width: 800px) {
+  main .counterContainer {
+    width: 80%;
+    gap: 20px; }
+  main .service .cardVideo {
+    margin: 50px 30px;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: auto; }
+    main .service .cardVideo .imageBox {
+      margin: 0 auto; }
+      main .service .cardVideo .imageBox img:first-child {
+        border-radius: 16px;
+        aspect-ratio: 16/9;
+        width: 90%; }
+      main .service .cardVideo .imageBox img:last-child {
+        top: 45%;
+        left: 45%; }
+  main .service .card {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: max-content;
+    padding: 0 30px;
+    margin: 0; }
+    main .service .card .imageBox {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      main .service .card .imageBox img {
+        height: 300px;
+        aspect-ratio: 16/9; }
+    main .service .card .content {
+      width: 100%;
+      gap: 20px; }
+    main .service .card.right {
+      flex-direction: column; } }
+
+@media (max-width: 480px) {
+  main .counterContainer {
+    width: 80%;
+    flex-direction: column; }
+    main .counterContainer .line {
+      rotate: 90deg; }
+  main .service .cardVideo {
+    margin: 20px 10px;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: auto; }
+    main .service .cardVideo .imageBox {
+      margin: 0 auto; }
+      main .service .cardVideo .imageBox img:first-child {
+        border-radius: 16px;
+        aspect-ratio: 16/9;
+        width: 90%; }
+      main .service .cardVideo .imageBox img:last-child {
+        top: 30%;
+        left: 40%; }
+    main .service .cardVideo .content {
+      gap: 20px; }
+      main .service .cardVideo .content p {
+        width: 90%; }
+  main .service .card .imageBox img {
+    height: 200px; } }
